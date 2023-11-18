@@ -6,7 +6,7 @@
 
 *Target audience*: Anyone who is engaged in coding and/or data management, and keen to explore software or tools available to improve their workflow. At a practical level, students or researchers who need to manage multiple projects and need a system that allows ongoing coding training at your own pace will benefit from this training. The other important purpose is to help facilitate your creative workflow! Soon, you'll see what I mean!
 
-Welcome to the workshop! We will discuss challenges in project management and creative ways to manage the ongoing project better using one of the most versatile and powerful tool, Sublime Text 3. This training aims to *revolutionise* your workflow. Please note that you will experience a [*qualitative*]{.underline} difference in writing and project and learning resources management. You may not save much time (as this involves some learning curve), but it is the qualitative aspect that you will appreciate in terms of efficiency!
+Welcome to the workshop! We will discuss challenges in project management and creative ways to manage the ongoing project better using one of the most versatile and powerful tool, Sublime Text 3. This training aims to *revolutionise* your workflow. Please note that you will experience a *qualitative* difference in writing and project and learning resources management. You may not save much time (as this involves some learning curve), but it is the qualitative aspect that you will appreciate over time!
 
 # Preliminary Steps
 
@@ -18,7 +18,7 @@ Install R (<https://www.r-project.org/>) and Sublime Text 3 (<https://www.sublim
 
 The user-contributed packages in ST3 are managed by Package Control. We need to install Package Control first, to be able to install packages that permit rich features of ST3! The shortcut, `Ctrl+K, Ctrl+B`, enables us to access the entire folder tree (called sidebar) in ST3.
 
-Before we proceed, let's install *languageserver* to help ST3 communicate with R. This can be done later in ST3, but let's keep it simple for now by running the code below in RStudio.
+Before we proceed, let's install *languageserver* to help ST3 communicate with R. This can be done later in ST3, but let's keep it simple for now by running the code in RStudio.
 
 -   In RStudio, run, `install.packages("languageserver")`
 
@@ -29,13 +29,9 @@ This step is crucial. Please ensure languageserver installation was successfully
 Have you been given training on project management? Why or why not? Often times, we embark on an amazing project but we may have to revisit in six months' time or collaborate with others. Let's contemplate on a few things.
 
 -   How often do you struggle locating folders and files?
-
 -   Do you memorise code or do you google whenever needed?
-
 -   Do you feel there is a need to better organise tutorial materials?
-
 -   Do you like repeating tasks?
-
 -   How comfortable are you with sharing your code?
 
 It'd be nice to have a project template with relevant folders ready and organising is nicely done already.
@@ -89,11 +85,8 @@ While many programming languages can be run from within Sublime Text 3, our main
 ## Demonstration of key features in ST3
 
 -   Running R code interactively
-
--   Jump between projects (using *Project Manager* package)
-
--   File management (using Side​Bar​*Enhancements* package)
-
+-   Jumping between projects (using *Project Manager* package)
+-   File management (using *SideBarEnhancements* package)
     -   move files between panels
     -   find location of the current file in the folder tree
     -   launch a particular tutorial file for a quick reference (Ctrl+P)
@@ -104,7 +97,7 @@ While many programming languages can be run from within Sublime Text 3, our main
 
 ## Step 1: Install packages in ST3
 
-Press `Ctrl+Shift+P`. This triggers an *empty* drop-down window. This is called Command Palette. The cursor is waiting for a command. Start typing "Install Package" then press Enter. In a few seconds, when the Command Palette window appears again, type "r-ide", and press Enter. Notice the updating message at the bottom left of the ST3 window, to see the confirmation of the installation status (such as "*R-IDE package was installed successfully*"). Repeat this process to install other packages.The packages we need are :
+Press `Ctrl+Shift+P`. This triggers an *empty* drop-down window. This window is called Command Palette. The cursor is waiting for a command in the Command Palette. Start typing "Install Package" then press Enter. In a few seconds, when the Command Palette window appears again, type "r-ide", and press Enter. Notice the updating message at the bottom left of the ST3 window, to see the confirmation of the installation status (such as "*R-IDE package was installed successfully*"). Repeat this process to install other packages.The packages we need are :
 
 -   R-IDE (to get syntax highlights),
 
@@ -178,7 +171,7 @@ This setup allows you to run R code in ST3, but the console will print all in on
 
 ### 3.1 Download and install anaconda.
 
-Download here (<https://www.anaconda.com/download/>) and install it. Then, add anaconda3 path in environment in Windows PC (see here to learn about environment: ) . Do not add r.exe at the end of the path. It won't work!
+Download here (<https://www.anaconda.com/download/>) and install it. Then, add anaconda3 path in environment in Windows PC. Please note that r.exe is not added at the end of the path. 
 
 `C:\Program Files\R\R-4.3.1\bin\`
 
@@ -237,7 +230,7 @@ You may encounter this permission denied error (your error message may differ).
 mv: cannot move '/usr/local/lib/R/site-library/rlang' to '/usr/local/lib/R/site-library/00LOCK-rlang/rlang': Permission denied
 ```
 
-This is due to conflicts caused by existing library files by earlier R version. For instance, you installed R 3.6 earlier and attempt to install a newer version, R 4.3, while keeping the older version. In such case, ensure to create a new folder indicating the newer version and install languageserver as appropriate. EXAMPLE???
+This is due to conflicts caused by existing library files by earlier R version. For instance, you installed R 3.6 earlier and attempt to install a newer version, R 4.3, while keeping the older version. In such case, ensure to create a new folder indicating the newer version and install languageserver as appropriate. 
 
 ### Rterm would not launch
 
@@ -265,8 +258,8 @@ Separate creating contents and saving tasks. This way, you are less likely to ex
 
 In this workshop, we discussed how to use Sublime Text for efficient project and resources management. The side-by-side display of folder tree and contents files allows us to facilitate ongoing project management with minimum disruption. Accessing a particular file and maintaining tutorial/training materials can also be carried out with ease in Sublime Text.
 
-Please consult other excellent resources on Sublime Text 3 for further information. Discovering other useful packages (<https://packagecontrol.io/>) and customising shortcuts will greatly improve your workflow. You may set *Ctrl+Alt+R* to open Rterm, for example (Please see example files under Sublime_Tutorial folder in this repository). Using Sublime or VSCode for writing/memos is another possibility (You may consider the integration of *Visual Studio Code and R, but in recent years I was faced with the Rterm launching error and it is unresolved yet!).*
+Please consult other excellent resources on Sublime Text 3 for further information. Discovering other useful packages (<https://packagecontrol.io/>) and customising shortcuts will greatly improve your workflow. You may set *Ctrl+Alt+R* to open Rterm, for example (Please see example files under Sublime_Tutorial folder in this repository). Using Sublime or VSCode for writing/memos is another possibility (*You may consider the integration of Visual Studio Code and R, but in recent years I was faced with the Rterm launching error and it is unresolved yet!).*
 
-*Please note that the [**Terminus**]{.underline} package in Sublime should not be confused with **Terminal** package. In future, an implementation on Rmarkdown in Sublime can be added. This is beyond of the scope of the current workshop. Also, Sublime Text 4 (released in May 2021) was not implemented in this workshop. I find LSP not as stable as the previous version in Sublime Text 3. I will need to migrate to Sublime Text 4 at some point when this glitch is fixed in future, and updates will be available then. In the meantime, let me know if you have top tips to get around this issue in Sublime Text 4. Are you a Stata user? You may also benefit from here (<https://github.com/sook-tusk/Tech_Integrate_Stata_R_with_Editors> )*
+*Please note that the *Terminus* package in Sublime should not be confused with **Terminal** package. In future, an implementation on Rmarkdown in Sublime can be added. This is beyond of the scope of the current workshop. Also, Sublime Text 4 (released in May 2021) was not implemented in this workshop. I find LSP not as stable as the previous version in Sublime Text 3. I will need to migrate to Sublime Text 4 at some point when this glitch is fixed in future, and updates will be available then. In the meantime, let me know if you have top tips to get around this issue in Sublime Text 4. Are you a Stata user? You may also benefit from here (<https://github.com/sook-tusk/Tech_Integrate_Stata_R_with_Editors> )*
 
 I hope Sublime Text helps manage your project, and improve your workflow for years to come. While being mindful of caveats, I really hope you utilise this amazing tool, Sublime, wisely. Thank you, and please get in touch with your success stories!
