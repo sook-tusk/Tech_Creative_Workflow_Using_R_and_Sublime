@@ -22,7 +22,8 @@ Before we proceed, let's install *languageserver* to help ST3 communicate with R
 
 -   In RStudio, run, `install.packages("languageserver")`
 
-> [!IMPORTANT] This step is crucial. Please ensure languageserver installation was successfully done, and no errors has occurred (See below troubleshooting to resolve any errors). Now, we are ready for next steps! (*Unlike RStudio, ST3 needs manual setup. It involves installing (user-contributed) packages and configuring them to let ST3 recognise R language and prints output*).
+> [!IMPORTANT] 
+> This step is crucial. Please ensure languageserver installation was successfully done, and no errors has occurred (See below troubleshooting to resolve any errors). Now, we are ready for next steps! (*Unlike RStudio, ST3 needs manual setup. It involves installing (user-contributed) packages and configuring them to let ST3 recognise R language and prints output*).
 
 # Part 1: Managing project
 
@@ -115,7 +116,7 @@ Press `Ctrl+Shift+P`. This triggers an *empty* drop-down window. This window is 
 
 We ensure Sublime Text recognises your R version and path. In Sublime Text menu, go to `Preferences > Package Settings > R-IDE > Settings`. The panel on the right concerns the user customisation file. Copy below or edit as necessary.
 
-``` py
+```py
 {
     "r_binary": "C:\\Program Files\\R\\R-4.3.1\\bin\\x64\\R.exe",
 }
@@ -129,7 +130,7 @@ No need to customise.
 
 In the blank user customisation area, paste the following.
 
-``` py
+```py
 {
     "r":
     {
@@ -143,7 +144,7 @@ In the blank user customisation area, paste the following.
 
 Customise as necessary (if you are using Mac PC). *Terminus is a variant name referring to Terminal such as Command Prompt, PowerShell, and Bash*.
 
-``` py
+```py
 {
       "default_config": {
         // "osx": null,      // login shell
