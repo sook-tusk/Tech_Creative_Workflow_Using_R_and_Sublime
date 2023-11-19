@@ -10,7 +10,7 @@ Welcome to the workshop! We will discuss challenges in project management and cr
 
 # Preliminary Steps
 
-Install R (<https://www.r-project.org/>) and Sublime Text 3 (<https://www.sublimetext.com/download>). In Sublime Text 3 (ST3) menu,
+Install R (<https://www.r-project.org/>) and Sublime Text 3 Build 3211 (<https://www.sublimetext.com/3>). In Sublime Text 3 (ST3) menu,
 
 -   In ST3, Go to `Tools > Install Package Control...` and allow a few seconds to run.
 
@@ -22,7 +22,7 @@ Before we proceed, let's install *languageserver* to help ST3 communicate with R
 
 -   In RStudio, run, `install.packages("languageserver")`
 
-This step is crucial. Please ensure languageserver installation was successfully done, and no errors has occurred (See below troubleshooting to resolve any errors). Now, we are ready for next steps! (*Unlike RStudio, ST3 needs manual setup. It involves installing (user-contributed) packages and configuring them to let ST3 recognise R language and prints output*).
+> [!IMPORTANT] This step is crucial. Please ensure languageserver installation was successfully done, and no errors has occurred (See below troubleshooting to resolve any errors). Now, we are ready for next steps! (*Unlike RStudio, ST3 needs manual setup. It involves installing (user-contributed) packages and configuring them to let ST3 recognise R language and prints output*).
 
 # Part 1: Managing project
 
@@ -115,7 +115,7 @@ Press `Ctrl+Shift+P`. This triggers an *empty* drop-down window. This window is 
 
 We ensure Sublime Text recognises your R version and path. In Sublime Text menu, go to `Preferences > Package Settings > R-IDE > Settings`. The panel on the right concerns the user customisation file. Copy below or edit as necessary.
 
-```         
+``` py
 {
     "r_binary": "C:\\Program Files\\R\\R-4.3.1\\bin\\x64\\R.exe",
 }
@@ -129,7 +129,7 @@ No need to customise.
 
 In the blank user customisation area, paste the following.
 
-```         
+``` py
 {
     "r":
     {
@@ -143,7 +143,7 @@ In the blank user customisation area, paste the following.
 
 Customise as necessary (if you are using Mac PC). *Terminus is a variant name referring to Terminal such as Command Prompt, PowerShell, and Bash*.
 
-```         
+``` py
 {
       "default_config": {
         // "osx": null,      // login shell
@@ -171,7 +171,7 @@ This setup allows you to run R code in ST3, but the console will print all in on
 
 ### 3.1 Download and install anaconda.
 
-Download here (<https://www.anaconda.com/download/>) and install it. Then, add anaconda3 path in environment in Windows PC. Please note that r.exe is not added at the end of the path. 
+Download here (<https://www.anaconda.com/download/>) and install it. Then, add anaconda3 path in environment in Windows PC. Please note that r.exe is not added at the end of the path.
 
 `C:\Program Files\R\R-4.3.1\bin\`
 
@@ -201,7 +201,7 @@ Now, we are set to instruct Sublime to launch *Rterm*. Press Ctrl+Shit+P and typ
 
 When *Rterm* opens, run R code by pressing `Ctrl+Enter` in any R script file. *Voila*!
 
-Close Sublime Text and test if Rterm is activated. Allow a minute for Rterm (from previous session) to relaunch itself (or click anywhere in Rterm for activation). Open another Rterm to ensure the current setup is working as intended. From now on, you can simply open Rterm to run R code. Well-done!
+Close Sublime Text and test if Rterm is activated. Allow a minute for Rterm (from previous session) to relaunch itself (or click anywhere in Rterm for activation). Open another Rterm to ensure the current setup is working as intended. From now on, you can simply open Rterm to run R code. Well-done! :+1:
 
 ## Troubleshooting
 
@@ -213,7 +213,7 @@ Close Sublime Text and test if Rterm is activated. Allow a minute for Rterm (fro
 
 Then, add the location detail in the .Rprofile.
 
-```         
+``` py
 options(langserver_library = 'C:/Users/yourname/Documents/R/win-library/4.3/languageserver')
     
     .First <- function () {
@@ -226,11 +226,11 @@ options(langserver_library = 'C:/Users/yourname/Documents/R/win-library/4.3/lang
 
 You may encounter this permission denied error (your error message may differ).
 
-```         
+``` py
 mv: cannot move '/usr/local/lib/R/site-library/rlang' to '/usr/local/lib/R/site-library/00LOCK-rlang/rlang': Permission denied
 ```
 
-This is due to conflicts caused by existing library files by earlier R version. For instance, you installed R 3.6 earlier and attempt to install a newer version, R 4.3, while keeping the older version. In such case, ensure to create a new folder indicating the newer version and install languageserver as appropriate. 
+This is due to conflicts caused by existing library files by earlier R version. For instance, you installed R 3.6 earlier and attempt to install a newer version, R 4.3, while keeping the older version. In such case, ensure to create a new folder indicating the newer version and install languageserver as appropriate.
 
 ### Rterm would not launch
 
@@ -260,6 +260,6 @@ In this workshop, we discussed how to use Sublime Text for efficient project and
 
 Please consult other excellent resources on Sublime Text 3 for further information. Discovering other useful packages (<https://packagecontrol.io/>) and customising shortcuts will greatly improve your workflow. You may set *Ctrl+Alt+R* to open Rterm, for example (Please see example files under Sublime_Tutorial folder in this repository). Using Sublime or VSCode for writing/memos is another possibility (*You may consider the integration of Visual Studio Code and R, but in recent years I was faced with the Rterm launching error and it is unresolved yet!).*
 
-*Please note that the *Terminus* package in Sublime should not be confused with **Terminal** package. In future, an implementation on Rmarkdown in Sublime can be added. This is beyond of the scope of the current workshop. Also, Sublime Text 4 (released in May 2021) was not implemented in this workshop. I find LSP not as stable as the previous version in Sublime Text 3. I will need to migrate to Sublime Text 4 at some point when this glitch is fixed in future, and updates will be available then. In the meantime, let me know if you have top tips to get around this issue in Sublime Text 4. Are you a Stata user? You may also benefit from here (<https://github.com/sook-tusk/Tech_Integrate_Stata_R_with_Editors> )*
+*Please note that the* Terminus\* package in Sublime should not be confused with **Terminal** package. In future, an implementation on Rmarkdown in Sublime can be added. This is beyond of the scope of the current workshop. Also, Sublime Text 4 (released in May 2021) was not implemented in this workshop. I find LSP not as stable as the previous version in Sublime Text 3. I will need to migrate to Sublime Text 4 at some point when this glitch is fixed in future, and updates will be available then. In the meantime, let me know if you have top tips to get around this issue in Sublime Text 4. Are you a Stata user? You may also benefit from here (<https://github.com/sook-tusk/Tech_Integrate_Stata_R_with_Editors> )\*
 
 I hope Sublime Text helps manage your project, and improve your workflow for years to come. While being mindful of caveats, I really hope you utilise this amazing tool, Sublime, wisely. Thank you, and please get in touch with your success stories!
