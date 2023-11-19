@@ -39,7 +39,7 @@ It'd be nice to have a project template with relevant folders ready and organisi
 
 ## Project folder management :
 
--   **Folders**: R script that creates folders/sub-folders (In the repository, see 03_Create_Folders.R under Project_management folder).
+-   **Folders**: R script that creates folders/sub-folders (In the repository, see [example folder-creating R script](Project_management/03_Create_Folders.R) located under *Project_management* folder.
 
 -   **Folder/file naming conventions**: consider giving sequence to sort in numbers
 
@@ -260,6 +260,6 @@ In this workshop, we discussed how to use Sublime Text for efficient project and
 
 Please consult other excellent resources on Sublime Text 3 for further information. Discovering other useful packages (<https://packagecontrol.io/>) and customising shortcuts will greatly improve your workflow. You may set *Ctrl+Alt+R* to open Rterm. Please see the [example keymap](Sublime_Tutorial/Example.sublime-keymap) setup file under Sublime_Tutorial folder in this repository. Using Sublime or VSCode for writing/memos is another possibility (*You may consider the integration of Visual Studio Code and R, but in recent years I was faced with the Rterm launching error and it is unresolved yet!*).
 
-*Please note that the **Terminus** package in Sublime should not be confused with **Terminal** package. In future, an implementation on Rmarkdown in Sublime can be added. This is beyond of the scope of the current workshop. Also, Sublime Text 4 (released in May 2021) was not implemented in this workshop. I find LSP not as stable as the previous version in Sublime Text 3. I will need to migrate to Sublime Text 4 at some point when this glitch is fixed in future, and updates will be available then. In the meantime, let me know if you have top tips to get around this issue in Sublime Text 4. Are you a Stata user? You may also benefit from here (<https://github.com/sook-tusk/Tech_Integrate_Stata_R_with_Editors>)
+Please note that the **Terminus** package in Sublime should not be confused with **Terminal** package. In future, an implementation on Rmarkdown in Sublime can be added. This is beyond of the scope of the current workshop. Also, Sublime Text 4 (released in May 2021) was not implemented in this workshop. I find LSP not as stable as the previous version in Sublime Text 3. I will need to migrate to Sublime Text 4 at some point when this glitch is fixed in future, and updates will be available then. In the meantime, let me know if you have top tips to get around this issue in Sublime Text 4. Are you a Stata user? You may also benefit from here (<https://github.com/sook-tusk/Tech_Integrate_Stata_R_with_Editors>). 
 
 I hope Sublime Text helps manage your project, and improve your workflow for years to come. While being mindful of caveats, I really hope you utilise this amazing tool, Sublime, wisely. Thank you, and please get in touch with your success stories!
