@@ -22,8 +22,7 @@ Before we proceed, let's install *languageserver* to help ST3 communicate with R
 
 -   In RStudio, run, `install.packages("languageserver")`
 
-> [!IMPORTANT] 
-> This step is crucial. Please ensure languageserver installation was successfully done, and no errors has occurred (See below troubleshooting to resolve any errors). Now, we are ready for next steps! (*Unlike RStudio, ST3 needs manual setup. It involves installing (user-contributed) packages and configuring them to let ST3 recognise R language and prints output*).
+> [!IMPORTANT] This step is crucial. Please ensure languageserver installation was successfully done, and no errors has occurred (See below troubleshooting to resolve any errors). Now, we are ready for next steps! (*Unlike RStudio, ST3 needs manual setup. It involves installing (user-contributed) packages and configuring them to let ST3 recognise R language and prints output*).
 
 # Part 1: Managing project
 
@@ -239,21 +238,20 @@ This is due to conflicts caused by existing library files by earlier R version. 
 
 **A more sustainable approach** would be to remove R-IDE and LSP packages in `Command Palette` before reinstalling these packages. Sublime will remember your earlier custom settings and take care of the rest. Restart PC and try again. If this doesn't help, consider removing/reinstalling anaconda and radian, or even R. As your PC updates with newer technology (*watch out your PC updates!*), it's a good idea to maintain the optimal (almost) up-to-date computing environment.
 
-# TIPS 1: Perform Regular Backups
-
-To prevent any data loss, I strongly recommend regular backups before any significant changes. Create a backup folder with a date and copy all contents from here:
-
-> C:\\Users\\yourname\\AppData\\Roaming\\Sublime Text 3
-
-# TIPS 2: Paste/export R code with syntax highlights
+# TIPS 1: Paste/export R code with syntax highlights
 
 Visual Studio Code (VSCode) and Notepad++ offers extremely handy shortcuts for this task. Open an R script file in VSCode and copy and paste onto an email or in Word. It's very handy when you seek help with fixing errors. VS Code is free to download here (<https://code.visualstudio.com/>). In Notepad++ (Windows PC), highlight the portion of code then go to menu, *Plugins \> NppExport \> Copy HTML to clipboard* (I use `Ctrl+Shift+H` as a shortcut). Then, paste onto an email or in Word. The code highlights are nicely retained!
 
-# TIPS 3: Decide filename and location first
+# TIPS 2: Decide location and filename first
 
 ### before creating the contents
 
 Separate creating contents and saving tasks. This way, you are less likely to experience data loss!
+
+> [!TIP]
+> To prevent any data loss, I strongly recommend that you perform **regular backups** before any significant changes. Create a backup folder with a date and copy all contents from here:
+
+> C:\\Users\\yourname\\AppData\\Roaming\\Sublime Text 3
 
 # Conclusion
 
@@ -261,6 +259,6 @@ In this workshop, we discussed how to use Sublime Text for efficient project and
 
 Please consult other excellent resources on Sublime Text 3 for further information. Discovering other useful packages (<https://packagecontrol.io/>) and customising shortcuts will greatly improve your workflow. You may set *Ctrl+Alt+R* to open Rterm, for example (Please see example files under Sublime_Tutorial folder in this repository). Using Sublime or VSCode for writing/memos is another possibility (*You may consider the integration of Visual Studio Code and R, but in recent years I was faced with the Rterm launching error and it is unresolved yet!).*
 
-*Please note that the* Terminus\* package in Sublime should not be confused with **Terminal** package. In future, an implementation on Rmarkdown in Sublime can be added. This is beyond of the scope of the current workshop. Also, Sublime Text 4 (released in May 2021) was not implemented in this workshop. I find LSP not as stable as the previous version in Sublime Text 3. I will need to migrate to Sublime Text 4 at some point when this glitch is fixed in future, and updates will be available then. In the meantime, let me know if you have top tips to get around this issue in Sublime Text 4. Are you a Stata user? You may also benefit from here (<https://github.com/sook-tusk/Tech_Integrate_Stata_R_with_Editors> )\*
+*Please note that the* Terminus\* package in Sublime should not be confused with **Terminal** package. In future, an implementation on Rmarkdown in Sublime can be added. This is beyond of the scope of the current workshop. Also, Sublime Text 4 (released in May 2021) was not implemented in this workshop. I find LSP not as stable as the previous version in Sublime Text 3. I will need to migrate to Sublime Text 4 at some point when this glitch is fixed in future, and updates will be available then. In the meantime, let me know if you have top tips to get around this issue in Sublime Text 4. Are you a Stata user? You may also benefit from here (<https://github.com/sook-tusk/Tech_Integrate_Stata_R_with_Editors>)
 
 I hope Sublime Text helps manage your project, and improve your workflow for years to come. While being mindful of caveats, I really hope you utilise this amazing tool, Sublime, wisely. Thank you, and please get in touch with your success stories!
