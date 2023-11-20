@@ -6,7 +6,7 @@
 
 *Target audience*: Anyone who is engaged in coding and/or data management, and keen to explore software or tools available to improve their workflow. At a practical level, students or researchers who need to manage multiple projects and need a system that allows ongoing coding training at your own pace will benefit from this training. The other important purpose is to help facilitate your creative workflow! Soon, you'll see what I mean!
 
-Welcome to the workshop! We will discuss challenges in project management and creative ways to manage the ongoing project better using one of the most versatile and powerful tool, Sublime Text 3. This training aims to *revolutionise* your workflow. Please note that you will experience a *qualitative* difference in writing and project and learning resources management. You may not save much time (as this involves some learning curve), but it is the qualitative aspect that you will appreciate over time!
+Welcome to the workshop! We will discuss challenges in project management and creative ways to manage the ongoing project better using one of the most versatile and powerful tool, Sublime Text 3. I will walk you through all the steps necessary to integrate R and Sublime in Part 3. This training aims to *revolutionise* your workflow. Please note that you will experience a *qualitative* difference in writing and project and learning resources management. You may not save much time (as this involves some learning curve), but it is the qualitative aspect that you will appreciate over time!
 
 # Preliminary Steps
 
@@ -25,7 +25,7 @@ Before we proceed, let's install *languageserver* to help ST3 communicate with R
 > [!IMPORTANT] 
 > This step is crucial. Please ensure languageserver installation was successfully done, and no errors has occurred (See below troubleshooting to resolve any errors). Now, we are ready for next steps! (*Unlike RStudio, ST3 needs manual setup. It involves installing (user-contributed) packages and configuring them to let ST3 recognise R language and prints output*).
 
-# Part 1: Managing project
+# Part 1: Managing projects
 
 Have you been given training on project management? Why or why not? Often times, we embark on an amazing project but we may have to revisit in six months' time or collaborate with others. Let's contemplate on a few things.
 
@@ -59,7 +59,7 @@ The coding journey is an ongoing process and you may benefit from your own code 
 
 Now, how do we access the most relevant file immediately? Manually navigating folders in File Explorer will be very slow. More importantly, how do we minimise disruption in your current workflow and shift your focus from training to the current project?
 
-# Part 2: Modern External Text Editors
+# Part 2: Introducing Modern External Text Editors
 
 ### and their caveats
 
@@ -98,7 +98,7 @@ Watch the video (Please unmute first. Instructions begin in 15 seconds)
 
 https://github.com/sook-tusk/Tech_Creative_Workflow_Using_R_and_Sublime/assets/120035640/6230c2a6-8926-4df7-8d88-53b49354694e
 
-# Part 3: Integrate R and Sublime Text 3 (ST3)
+# Part 3: Integrating R and Sublime Text 3 (ST3)
 
 ## Step 1: Install packages in ST3
 
