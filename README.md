@@ -172,11 +172,7 @@ This setup allows you to run R code in ST3, but the console will print all in on
 
 ### 3.1 Download and install anaconda.
 
-Download here (<https://www.anaconda.com/download/>) and install it. Then, add anaconda3 path in environment in Windows PC. Please note that r.exe is not added at the end of the path.
-
-`C:\Program Files\R\R-4.3.1\bin\`
-
-Restart PC after environment setting has changed.
+Download here (<https://www.anaconda.com/download/>) and install it. 
 
 ### 3.2 Install radian
 
@@ -197,7 +193,7 @@ Paths is one of the Windows PC system properties. Windows PCs look for an .exe i
 
 ![](image/env.png)
 
-Add R, Sublime Text 3, anaconda3, and radian folders. The paths for anacoda3 are not strictly required. If you are planning on running Python code in editors, consider adding them as well. 
+Add R, Sublime Text 3, anaconda3, and radian folders. The paths for anacoda3 are not strictly required. If you are planning on running Python code in editors, consider adding them as well, though. 
 Please note that .exe is not added at the end of the path. For R, it will be:
 
 `C:\Program Files\R\R-4.3.1\bin\x64`
