@@ -94,7 +94,7 @@ While many programming languages can be run from within Sublime Text 3, our main
     -   New View into file - no more back and forth scrolling!
     -   Jump between sections
 
-Watch the video (Please unmute. Instructions begin in 15 seconds)
+Watch the video (Please unmute first. Instructions begin in 15 seconds)
 
 https://github.com/sook-tusk/Tech_Creative_Workflow_Using_R_and_Sublime/assets/120035640/6230c2a6-8926-4df7-8d88-53b49354694e
 
