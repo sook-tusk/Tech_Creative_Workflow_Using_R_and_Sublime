@@ -5,7 +5,7 @@ rm(list = ls())
 .libPaths()
 
 file.path(Sys.getenv("HOME"), ".Rprofile")
-# "C:/Users/tusk/Documents/.Rprofile"
+# "C:/Users/yourname/Documents/.Rprofile"
 
 
 ### End ###
