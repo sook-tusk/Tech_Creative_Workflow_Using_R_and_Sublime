@@ -16,7 +16,7 @@ Install R (<https://www.r-project.org/>) and Sublime Text 3 Build 3211 (<https:/
 
 -   In ST3, Press `Ctrl+K, Ctrl+B`. Repeat to see what happens.
 
-The user-contributed packages in ST3 are managed by Package Control. We need to install Package Control first, to be able to install packages that permit rich features of ST3! The shortcut, `Ctrl+K, Ctrl+B`, enables us to access the entire folder tree (called sidebar) in ST3.
+The user-contributed packages in ST3 are managed by Package Control. We need to install Package Control first, to be able to install packages that permit rich features of ST3! The shortcut, `Ctrl+K, Ctrl+B`, enables us to access the entire folder tree (called sidebar) in ST3. If a folder is open, ST3 reveals the entire hierarchy.
 
 Before we proceed, let's install *languageserver* to help ST3 communicate with R. This can be done later in ST3, but let's keep it simple for now by running the code in RStudio.
 
@@ -192,7 +192,20 @@ and execute the following command:
 
 ![](image/radian2.png)
 
-## Step 4. All done. Test running R code in ST3
+## Step 4: Nearly done. Add paths as appropriate
+Paths is one of the Windows PC system properties. Windows PCs look for an .exe in the paths set in the environment variable window . To bring up the environment variable window, type `env` at the search bar placed at the bottom left of the task bar.
+
+![](image/env.png)
+
+Add R, Sublime Text 3, anaconda3, and radian folders. The paths for anacoda3 are not strictly required. If you are planning on running Python code in editors, consider adding them as well. 
+Please note that .exe is not added at the end of the path. For R, it will be:
+
+`C:\Program Files\R\R-4.3.1\bin\x64`
+
+Restart PC after environment setting has changed.For the detailed instructions, see here [add-Windows-paths]
+(https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/). For Mac PCs, follow similar procedures as necessary.
+
+## Step 5: All done. Test running R code in ST3
 
 Press `Ctrl+Shit+P`, type **SendCode: Choose Program**, then choose **Terminus**. This needs to be done only once.
 
