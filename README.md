@@ -94,7 +94,9 @@ While many programming languages can be run from within Sublime Text 3, our main
     -   New View into file - no more back and forth scrolling!
     -   Jump between sections
 
-Watch in action here: [video](https://github.com/sook-tusk/Tech_Creative_Workflow_Using_R_and_Sublime/assets/120035640/33fb74b8-46c8-4673-b669-e974b680e90c)
+Watch in action here: 
+https://github.com/sook-tusk/Tech_Creative_Workflow_Using_R_and_Sublime/assets/120035640/6230c2a6-8926-4df7-8d88-53b49354694e
+
 
 # Part 3: Integrate R and Sublime Text 3 (ST3)
 
