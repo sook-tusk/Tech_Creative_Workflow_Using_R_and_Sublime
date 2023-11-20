@@ -86,7 +86,7 @@ While many programming languages can be run from within Sublime Text 3, our main
 ## Demonstration of key features in ST3
 
 -   Running R code interactively
--   Jumping between projects (using *Project Manager* package)
+-   Jumping between projects (using *Project Manager* package, Ctrl+Alt+P)
 -   File management (using *SideBarEnhancements* package)
     -   move files between panels
     -   find location of the current file in the folder tree
