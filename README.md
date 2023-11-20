@@ -193,7 +193,7 @@ and execute the following command:
 ![](image/radian2.png)
 
 ## Step 4: Nearly done. Add paths as appropriate
-Paths is one of the Windows PC system properties. Windows PCs look for an .exe in the paths set in the environment variable window . To bring up the environment variable window, type `env` at the search bar placed at the bottom left of the task bar.
+Paths is one of the Windows PC system properties. Windows PCs look for an .exe in the paths set in the environment variable window. To bring up the environment variable window, type `env` at the search bar placed at the bottom left of the task bar.
 
 ![](image/env.png)
 
