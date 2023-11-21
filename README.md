@@ -23,7 +23,7 @@ Before we proceed, let's install *languageserver* to help ST3 communicate with R
 -   In RStudio, run, `install.packages("languageserver")`
 
 > [!IMPORTANT] 
-> This step is crucial. Please ensure languageserver installation was successfully done, and no errors has occurred (See below troubleshooting to resolve any errors). Now, we are ready for next steps! (*Unlike RStudio, ST3 needs manual setup. It involves installing (user-contributed) packages and configuring them to let ST3 recognise R language and prints output*).
+> This step is crucial. Please ensure languageserver installation was successfully done, and no errors has occurred (See below [Troubleshooting guide](#Troubleshooting) to resolve any errors). Now, we are ready for next steps! (*Unlike RStudio, ST3 needs manual setup. It involves installing (user-contributed) packages and configuring them to let ST3 recognise R language and prints output*).
 
 # Part 1: Managing projects
 
@@ -217,7 +217,7 @@ When *Rterm* opens, run R code by pressing `Ctrl+Enter` in any R script file. *V
 
 Close Sublime Text and test if Rterm is activated. Allow a minute for Rterm (from previous session) to relaunch itself (or click anywhere in Rterm for activation). Open another Rterm to ensure the current setup is working as intended. From now on, you can simply open Rterm to run R code. Well-done! :+1:
 
-## Troubleshooting
+## Troubleshooting <a href="#Troubleshooting" id="Troubleshooting"/>
 
 
 ### Languageserver not connecting
