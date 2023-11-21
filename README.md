@@ -219,15 +219,6 @@ Close Sublime Text and test if Rterm is activated. Allow a minute for Rterm (fro
 
 ## Troubleshooting
 
-### Languageserver installation error
-
-You may encounter this permission denied error (your error message may differ).
-
-``` py
-mv: cannot move '/usr/local/lib/R/site-library/rlang' to '/usr/local/lib/R/site-library/00LOCK-rlang/rlang': Permission denied
-```
-
-This is due to conflicts caused by existing library files by earlier R version. All R packages you will install will be stored under library folder. If you have multiple R versions, the library settings need updating. For instance, you installed R 3.6 earlier and attempt to install a newer version, R 4.3, while keeping the older version. In such case, ensure to create a new folder indicating the newer version before proceeding with languageserver installation. You can check your R library paths by running this code: `.libPaths()`.
 
 ### Languageserver not connecting
 
@@ -248,6 +239,17 @@ options(langserver_library = 'C:/Users/yourname/Documents/R/win-library/4.3/lang
         .libPaths(c(path_to_libraries, .libPaths() ) )
     }
 ```
+If this doesn't work, you may reset the langserver_library as `C:/Users/yourname/AppData/Local/R/win-library/`. I recommend examining the location to verify the path and update the .Rprofile as appropriate. 
+
+### Languageserver installation error
+
+You may encounter this permission denied error (your error message may differ).
+
+``` py
+mv: cannot move '/usr/local/lib/R/site-library/rlang' to '/usr/local/lib/R/site-library/00LOCK-rlang/rlang': Permission denied
+```
+
+This is due to conflicts caused by existing library files by earlier R version. All R packages you will install will be stored under library folder. If you have multiple R versions, the library settings need updating. For instance, you installed R 3.6 earlier and attempt to install a newer version, R 4.3, while keeping the older version. In such case, ensure to create a new folder indicating the newer version before proceeding with languageserver installation. The possible paths may be either `C:/Users/yourname/Documents/R/win-library` or `C:/Users/yourname/AppData/Local/R/win-library/`. In the correct path, check your R version folder (e.g. 4.3) exists. If not, create one, then install languageserver. Ensure that installation is successful.
 
 ### Rterm would not launch
 
@@ -260,7 +262,7 @@ options(langserver_library = 'C:/Users/yourname/Documents/R/win-library/4.3/lang
 Visual Studio Code (VSCode) and Notepad++ offers extremely handy shortcuts for this task. Open an R script file in VSCode and copy and paste onto an email or in Word. It's very handy when you seek help with fixing errors. VS Code is free to download here (<https://code.visualstudio.com/>). In Notepad++ (Windows PC), highlight the portion of code then go to menu, *Plugins \> NppExport \> Copy HTML to clipboard* (I use `Ctrl+Shift+H` as a shortcut). Then, paste onto an email or in Word. The code highlights are nicely retained!
 
 # TIPS 2: Consider Sublime_Tutorial folder
-If there are many new concepts to grasp, you may consider keeping the information in a dedicated tutorial folder. It'll be handy when you upgrade your computing system or migrate to a newer PC. If you are fixing any errors, I recommend logging the details; you will need to remember what worked, and not worked, and why!
+If there are many new concepts to grasp, you may consider keeping the information in a dedicated tutorial folder. It'll be handy when you upgrade your computing system or migrate to a newer PC. If you are fixing any errors, I recommend logging the details; you will need to remember what worked, and not worked, and why! 
 
 # TIPS 3: Decide location and filename first
 
