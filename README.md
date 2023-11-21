@@ -1,4 +1,4 @@
-# Creative Workflow using R and Sublime
+# Creative Workflow using R and Sublime Text
 
 ## Efficient workflow: Jumping between projects and files like a ninja
 
@@ -6,7 +6,7 @@
 
 *Target audience*: Anyone who is engaged in coding and/or data management, and keen to explore software or tools available to improve their workflow. At a practical level, students or researchers who need to manage multiple projects and need a system that allows ongoing coding training at your own pace will benefit from this training. The other important purpose is to help facilitate your creative workflow! Soon, you'll see what I mean!
 
-Welcome to the workshop! We will discuss challenges in project management and creative ways to manage the ongoing project better using one of the most versatile and powerful tool, Sublime Text 3. I will walk you through all the steps necessary to integrate R and Sublime in Part 3. This training aims to *revolutionise* your workflow. Please note that you will experience a *qualitative* difference in writing and project and learning resources management. You may not save much time (as this involves some learning curve), but it is the qualitative aspect that you will appreciate over time!
+Welcome to the workshop! We will discuss challenges in project management and creative ways to manage the ongoing project better using one of the most versatile and powerful tool, **Sublime Text 3**. I will walk you through all the steps necessary to integrate R and Sublime in Part 3. This training aims to *revolutionise* your workflow. Please note that you will experience a *qualitative* difference in writing and project and learning resources management. You may not save much time (as this involves some learning curve), but it is the qualitative aspect that you will appreciate over time!
 
 # Preliminary Steps
 
@@ -180,7 +180,7 @@ Download here (<https://www.anaconda.com/download/>) and install it.
 
 ### 3.2 Install radian
 
-In your PC, launch anaconda navigator. Go to:
+In your PC, launch anaconda navigator. Then, go to:
 
 `Environments > base(root) > funnylookingtriangle > Open Terminal`
 
@@ -219,13 +219,26 @@ Close Sublime Text and test if Rterm is activated. Allow a minute for Rterm (fro
 
 ## Troubleshooting
 
+### Languageserver installation error
+
+You may encounter this permission denied error (your error message may differ).
+
+``` py
+mv: cannot move '/usr/local/lib/R/site-library/rlang' to '/usr/local/lib/R/site-library/00LOCK-rlang/rlang': Permission denied
+```
+
+This is due to conflicts caused by existing library files by earlier R version. All R packages you will install will be stored under library folder. If you have multiple R versions, the library settings need updating. For instance, you installed R 3.6 earlier and attempt to install a newer version, R 4.3, while keeping the older version. In such case, ensure to create a new folder indicating the newer version before proceeding with languageserver installation. You can check your R library paths by running this code: `.libPaths()`.
+
 ### Languageserver not connecting
 
-.Rprofile needs updating. Locate the file here:
+.Rprofile needs updating. To do so, we need to locate, then open the file. Run the code below to find the path of .Rprofile.
 
-`file.path(Sys.getenv("HOME"), ".Rprofile")`
-
-Then, add the location detail in the .Rprofile.
+```R
+r$> file.path(Sys.getenv("HOME"), ".Rprofile")
+                               
+[1] "C:\\Users\\yourname\\Documents/.Rprofile"
+```
+Launch File Explorer and open the file. It is a plain text file. Add the location detail in the .Rprofile.
 
 ``` py
 options(langserver_library = 'C:/Users/yourname/Documents/R/win-library/4.3/languageserver')
@@ -235,16 +248,6 @@ options(langserver_library = 'C:/Users/yourname/Documents/R/win-library/4.3/lang
         .libPaths(c(path_to_libraries, .libPaths() ) )
     }
 ```
-
-### Languageserver installation error
-
-You may encounter this permission denied error (your error message may differ).
-
-``` py
-mv: cannot move '/usr/local/lib/R/site-library/rlang' to '/usr/local/lib/R/site-library/00LOCK-rlang/rlang': Permission denied
-```
-
-This is due to conflicts caused by existing library files by earlier R version. For instance, you installed R 3.6 earlier and attempt to install a newer version, R 4.3, while keeping the older version. In such case, ensure to create a new folder indicating the newer version and install languageserver as appropriate.
 
 ### Rterm would not launch
 
@@ -256,7 +259,10 @@ This is due to conflicts caused by existing library files by earlier R version. 
 
 Visual Studio Code (VSCode) and Notepad++ offers extremely handy shortcuts for this task. Open an R script file in VSCode and copy and paste onto an email or in Word. It's very handy when you seek help with fixing errors. VS Code is free to download here (<https://code.visualstudio.com/>). In Notepad++ (Windows PC), highlight the portion of code then go to menu, *Plugins \> NppExport \> Copy HTML to clipboard* (I use `Ctrl+Shift+H` as a shortcut). Then, paste onto an email or in Word. The code highlights are nicely retained!
 
-# TIPS 2: Decide location and filename first
+# TIPS 2: Consider Sublime_Tutorial folder
+If there are many new concepts to grasp, you may consider keeping the information in a dedicated tutorial folder. It'll be handy when you upgrade your computing system or migrate to a newer PC. If you are fixing any errors, I recommend logging the details; you will need to remember what worked, and not worked, and why!
+
+# TIPS 3: Decide location and filename first
 
 ### before creating the contents
 
