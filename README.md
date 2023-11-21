@@ -6,7 +6,7 @@
 
 *Target audience*: Anyone who is engaged in coding and/or data management, and keen to explore software or tools available to improve their workflow. At a practical level, students or researchers who need to manage multiple projects and need a system that allows ongoing coding training at your own pace will benefit from this training. The other important purpose is to help facilitate your creative workflow! Soon, you'll see what I mean!
 
-Welcome to the workshop! We will discuss challenges in project management and creative ways to manage the ongoing project better using one of the most versatile and powerful tool, **Sublime Text 3**. I will walk you through all the steps necessary to integrate R and Sublime in Part 3. This training aims to *revolutionise* your workflow. Please note that you will experience a *qualitative* difference in writing and project and learning resources management. You may not save much time (as this involves some learning curve), but it is the qualitative aspect that you will appreciate over time!
+Welcome to the workshop! We will discuss challenges in project management and creative ways to manage the ongoing project better using one of the most versatile and powerful tool, **Sublime Text 3**. I will walk you through all the steps necessary to integrate R and Sublime in [Part 3](#-Part-3:-Integrating-R-and-Sublime -Text-3). This training aims to *revolutionise* your workflow. Please note that you will experience a *qualitative* difference in writing and project and learning resources management. You may not save much time (as this involves some learning curve), but it is the qualitative aspect that you will appreciate over time!
 
 # Preliminary Steps
 
@@ -98,9 +98,9 @@ Watch the video (Please unmute first. Instructions begin in 15 seconds)
 
 https://github.com/sook-tusk/Tech_Creative_Workflow_Using_R_and_Sublime/assets/120035640/6230c2a6-8926-4df7-8d88-53b49354694e
 
-# Part 3: Integrating R and Sublime Text 3 (ST3)
+# Part 3: Integrating R and Sublime Text 3 
 
-## Step 1: Install packages in ST3
+## Step 1: Install packages in Sublime Text 3 (ST3)
 
 Press `Ctrl+Shift+P`. This triggers an *empty* drop-down window. This window is called Command Palette. The cursor is waiting for a command in the Command Palette. Start typing "Install Package" then press Enter. In a few seconds, when the Command Palette window appears again, type "r-ide", and press Enter. Notice the updating message at the bottom left of the ST3 window, to see the confirmation of the installation status (such as "*R-IDE package was installed successfully*"). Repeat this process to install other packages.The packages we need are :
 
