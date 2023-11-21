@@ -225,11 +225,9 @@ Close Sublime Text and test if Rterm is activated. Allow a minute for Rterm (fro
 .Rprofile needs updating. To do so, we need to locate, then open the file. Run the code below to find the path of .Rprofile.
 
 ```R
-r$> file.path(Sys.getenv("HOME"), ".Rprofile")
-                               
-[1] "C:\\Users\\yourname\\Documents/.Rprofile"
+file.path(Sys.getenv("HOME"), ".Rprofile")                            
 ```
-Launch File Explorer and open the file. It is a plain text file. Add the location detail in the .Rprofile.
+The output, `[1] "C:\\Users\\yourname\\Documents/.Rprofile"` indicates the location. Launch File Explorer and open the file. It is a plain text file. Add the location detail in the .Rprofile.
 
 ``` py
 options(langserver_library = 'C:/Users/yourname/Documents/R/win-library/4.3/languageserver')
