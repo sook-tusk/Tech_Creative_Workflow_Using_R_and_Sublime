@@ -6,7 +6,7 @@
 
 *Target audience*: Anyone who is engaged in coding and/or data management, and keen to explore software or tools available to improve their workflow. At a practical level, students or researchers who need to manage multiple projects and need a system that allows ongoing coding training at your own pace will benefit from this training. The other important purpose is to help facilitate your creative workflow! Soon, you'll see what I mean!
 
-Welcome to the workshop! We will discuss challenges in project management and creative ways to manage the ongoing project better using one of the most versatile and powerful tool, **Sublime Text 3**. I will walk you through all the steps necessary to integrate R and Sublime in [Part 3](#-Part-3:-Integrating-R-and-Sublime -Text-3). This training aims to *revolutionise* your workflow. Please note that you will experience a *qualitative* difference in writing and project and learning resources management. You may not save much time (as this involves some learning curve), but it is the qualitative aspect that you will appreciate over time!
+Welcome to the workshop! We will discuss challenges in project management and creative ways to manage the ongoing project better using one of the most versatile and powerful tool, **Sublime Text 3**. I will walk you through all the steps necessary to integrate R and Sublime in [Part 3](# Part 3: Integrating R and Sublime Text 3). This training aims to *revolutionise* your workflow. Please note that you will experience a *qualitative* difference in writing and project and learning resources management. You may not save much time (as this involves some learning curve), but it is the qualitative aspect that you will appreciate over time!
 
 # Preliminary Steps
 
