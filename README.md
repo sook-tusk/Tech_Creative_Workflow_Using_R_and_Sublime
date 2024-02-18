@@ -10,15 +10,15 @@ Welcome to the workshop! We will discuss challenges in project management and cr
 
 # Preliminary Steps
 
-Install R (<https://www.r-project.org/>) and Sublime Text Build 3211 (<https://www.sublimetext.com/download>). In Sublime Text (ST) menu,
+Install R (<https://www.r-project.org/>) and Sublime Text 4 (<https://www.sublimetext.com/download>). In Sublime Text (ST) menu,
 
 -   In ST, Go to `Tools > Install Package Control...` and allow a few seconds to run.
 
--   In ST, Press `Ctrl+K, Ctrl+B`. Repeat to see what happens.
+-   In ST, open a folder by accessing File menu. Then, press `Ctrl+K, Ctrl+B`. Repeat to see what happens.
 
 The user-contributed packages in ST are managed by Package Control. We need to install Package Control first, to be able to install packages that permit rich features of ST! The shortcut, `Ctrl+K, Ctrl+B`, enables us to access the entire folder tree (called sidebar) in ST. If a folder is open, ST reveals the entire hierarchy.
 
-Before we proceed, let's install *languageserver* to help ST communicate with R. This can be done later in ST, but let's keep it simple for now by running the code in RStudio.
+Before we proceed, let's install *languageserver* to help ST communicate with R. This can be done later in ST, but let's keep it simple for now by running the code in RStudio. Windows PC users also need to install *Rtools* compatible with your R version (<https://cran.r-project.org/bin/windows/Rtools/>) , prior to languageserver installation, to pre-empt any errors.
 
 -   In RStudio, run, `install.packages("languageserver")`
 
@@ -280,6 +280,6 @@ In this workshop, we discussed how to use Sublime Text for efficient project and
 
 Please consult other excellent resources on Sublime Text for further information. Discovering other useful packages (<https://packagecontrol.io/>) and customising shortcuts will greatly improve your workflow. You may set *Ctrl+Alt+R* to open Rterm. Please see the [example keymap](Sublime_Tutorial/Example.sublime-keymap) setup file under Sublime_Tutorial folder in this repository. Using Sublime or VSCode for writing/memos is another possibility. 
 
-Please note that the **Terminus** package in Sublime should not be confused with **Terminal** package. In future, an implementation on Rmarkdown in Sublime can be added. You may also consider the integration of Visual Studio Code and R.This is beyond of the scope of the current workshop. Are you a Stata user? You may also benefit from here (<https://github.com/sook-tusk/Tech_Integrate_Stata_R_with_Editors>). 
+Please note that the **Terminus** package in Sublime should not be confused with **Terminal** package. In future, an implementation on Rmarkdown in Sublime can be added. You may also consider the integration of Visual Studio Code and R, as the integration works in a similar principle.This is beyond of the scope of the current workshop. Are you a Stata user? You may also benefit from here (<https://github.com/sook-tusk/Tech_Integrate_Stata_R_with_Editors>). 
 
 I hope Sublime Text helps manage your project, and improve your workflow for years to come. While being mindful of caveats, I really hope you utilise this amazing tool, Sublime, wisely. Thank you, and please get in touch with your success stories!
