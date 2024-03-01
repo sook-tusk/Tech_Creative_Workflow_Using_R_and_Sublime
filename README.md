@@ -14,7 +14,7 @@ Install R (<https://www.r-project.org/>) and Sublime Text 4 (<https://www.sublim
 
 -   In ST, Go to `Tools > Install Package Control...` and allow a few seconds to run.
 
--   In ST, open a folder by accessing File menu. Then, press `Ctrl+K, Ctrl+B`. Repeat to see what happens.
+-   In ST, open a folder by accessing File menu. Then, press `Ctrl+K, Ctrl+B (Replace Ctrl with Cmd in Mac)`. Repeat to see what happens.
 
 The user-contributed packages in ST are managed by Package Control. We need to install Package Control first, to be able to install packages that permit rich features of ST! The shortcut, `Ctrl+K, Ctrl+B`, enables us to access the entire folder tree (called sidebar) in ST. If a folder is open, ST reveals the entire hierarchy.
 
@@ -118,11 +118,14 @@ Press `Ctrl+Shift+P`. This triggers an *empty* drop-down window. This window is 
 
 ### R-IDE
 
-We ensure Sublime Text recognises your R version and path. In Sublime Text menu, go to `Preferences > Package Settings > R-IDE > Settings`. The panel on the right concerns the user customisation file. Copy below or edit as necessary.
+We ensure Sublime Text recognises your R version and path. In Sublime Text menu, go to `Preferences > Package Settings > R-IDE > Settings` in Windows. The panel on the right concerns the user customisation file. Copy below or edit as necessary. Mac users can access the package settings by clicking `Sublime Text > Settings > Package Settings` on the top left corner of your screen.
 
 ```py
 {
+// Windows
     "r_binary": "C:\\Program Files\\R\\R-4.3.1\\bin\\x64\\R.exe",
+// Mac
+    "r_binary": "/usr/local/bin/R",	
 }
 ```
 
@@ -136,6 +139,7 @@ In the blank user customisation area, paste the following.
 
 ```py
 {
+// Mac, Linux and Windows
     "r":
     {
         "prog": "terminus",
@@ -146,15 +150,15 @@ In the blank user customisation area, paste the following.
 
 ### Terminus
 
-Customise as necessary (if you are using Mac PC). *Terminus is a variant name referring to Terminal such as Command Prompt, PowerShell, and Bash*.
+Customise as necessary. *Terminus is a variant name referring to Terminal such as Command Prompt, PowerShell, and Bash*.
 
 ```py
 {
+// Windows
       "default_config": {
-        // "osx": null,      // login shell
          "windows": "Rterm",
-  // If Radian won't work, use below, then type R from an R script
-  // to manually activate Rterm
+  // If Radian won't work, use Command Prompt, then type R from an R script
+  // to manually activate Rterm. Specifying the full radian path can also help.
         // "windows": "Command Prompt",
     },
     // a list of available shells to execute
@@ -169,6 +173,45 @@ Customise as necessary (if you are using Mac PC). *Terminus is a variant name re
   ],
 } 
 ```
+In Mac:
+```py
+{
+    "default_config": {
+        "osx": "Rterm",      // login shell
+    },
+    // a list of available shells to execute
+    "shell_configs": [
+        {
+            "name": "Rterm",
+            "cmd": "/Users/yourname/anaconda3/bin/radian",
+            "env": {},
+            "enable": true,
+            "platforms": ["osx"]
+        },
+  ],
+} 
+```
+
+Shortcut for radian (R terminal) in Mac: 
+```py
+[
+// To open radian (radian opens Rterminal automatically to run R codes)
+// To make two columns, go to View > Layout > Columns:2. 
+// Put the cursor in Column2.
+// In Mac, "command+alt+r" also works.
+    { "keys": ["command+option+r"],
+        "command": "terminus_open",
+        "args": {
+            "post_window_hooks": [
+                ["carry_file_to_pane", {"direction": "right"}]
+            ],
+            "cmd" : "/Users/yourname/anaconda3/bin/radian"
+        }
+    },
+]
+```
+
+Shortcut for radian (R terminal) in Windows: See the example keymap file in the repository.
 
 ## Step 3: Install Radian
 
@@ -182,17 +225,17 @@ Download here (<https://www.anaconda.com/download/>) and install it.
 
 In your PC, launch anaconda navigator. Then, go to:
 
-`Environments > base(root) > funnylookingtriangle > Open Terminal`
+`Environments > base(root) > greentriangle > Open Terminal`
 
 ![](image/anaconda.png)
 
 and execute the following command:
 
-> pip install -U radian
+> pip3 install -U radian
 
 ![](image/radian2.png)
 
-## Step 4: Nearly done. Add paths as appropriate
+## Step 4: Nearly done. Add paths as appropriate (Windows only)
 Paths is one of the Windows PC system properties. Windows PCs look for an .exe in the paths set in the environment variable window. To bring up the environment variable window, type `env` at the search bar placed at the bottom left of the task bar.
 
 ![](image/env.png)
