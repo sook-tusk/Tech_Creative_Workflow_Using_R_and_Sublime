@@ -124,7 +124,7 @@ We ensure Sublime Text recognises your R version and path. In Sublime Text menu,
 {
 // Windows
     "r_binary": "C:\\Program Files\\R\\R-4.3.1\\bin\\x64\\R.exe",
-// Mac
+// Mac, Linux
     "r_binary": "/usr/local/bin/R",	
 }
 ```
@@ -191,6 +191,7 @@ In Mac:
   ],
 } 
 ```
+If unsure about the radian path, type "whereis radian" in Terminal. In Linux, the path can be "/home/yourname/anaconda3/bin/radian".
 
 Shortcut for radian (R terminal) in Mac: 
 ```py
