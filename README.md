@@ -193,7 +193,7 @@ In Mac:
 ```
 If unsure about the radian path, type "whereis radian" in Terminal. In Linux, the path can be "/home/yourname/anaconda3/bin/radian".
 
-Shortcut for radian (R terminal) in Mac: 
+Shortcut for radian (R terminal) in Mac (Command+Shit+P > Preferences: Key Bindings): 
 ```py
 [
 // To open radian (radian opens Rterminal automatically to run R codes)
@@ -213,14 +213,23 @@ Shortcut for radian (R terminal) in Mac:
 // Assignment operator <- with "alt(option)+ -" works both in .R and .Rmd
     {
         "keys":["alt+-"],
-        "context":
-        [
-            {"key": "selector",
-            "operator": "equal",
-            "operand": "source.r"}
-        ],
         "command": "insert_snippet",
-        "args": {"contents": "<- $0"}
+        "args": {"contents": "<- $0"},
+        "context": [
+           { "key": "selector", "operator": "equal",
+             "operand": "source.r"}
+        ],
+
+    },
+// Pipe operator, command+shift+m (Mac), ctrl+shift+m (Windows)
+    { 
+        "keys": ["command+shift+m"], 
+        "command": "insert_snippet",
+        "args": { "contents": "%>% $0"},
+        "context": [
+          { "key": "selector", "operator": "equal", 
+            "operand": "source.r" },
+      ],
     },
 ]
 
