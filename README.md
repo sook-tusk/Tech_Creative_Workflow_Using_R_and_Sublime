@@ -210,7 +210,7 @@ Shortcut for radian (R terminal) in Mac (Command+Shit+P > Preferences: Key Bindi
         }
     },
 
-// Assignment operator <- with "alt(option)+ -" works both in .R and .Rmd
+// Assignment operator, <- with "alt(option)+ -" works both in .R and .Rmd
     {
         "keys":["alt+-"],
         "command": "insert_snippet",
@@ -221,7 +221,7 @@ Shortcut for radian (R terminal) in Mac (Command+Shit+P > Preferences: Key Bindi
         ],
 
     },
-// Pipe operator, command+shift+m (Mac), ctrl+shift+m (Windows)
+// Pipe operator, %>% with command+shift+m (Mac), ctrl+shift+m (Windows)
     { 
         "keys": ["command+shift+m"], 
         "command": "insert_snippet",
