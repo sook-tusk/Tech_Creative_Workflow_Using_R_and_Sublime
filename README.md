@@ -209,7 +209,21 @@ Shortcut for radian (R terminal) in Mac:
             "cmd" : "/Users/yourname/anaconda3/bin/radian"
         }
     },
+
+// Assignment operator <- with "alt(option)+ -" works both in .R and .Rmd
+    {
+        "keys":["alt+-"],
+        "context":
+        [
+            {"key": "selector",
+            "operator": "equal",
+            "operand": "source.r"}
+        ],
+        "command": "insert_snippet",
+        "args": {"contents": "<- $0"}
+    },
 ]
+
 ```
 
 Shortcut for radian (R terminal) in Windows: See the example keymap file in the repository.
