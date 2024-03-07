@@ -3,7 +3,7 @@
 accept default settings. 
 navigator open. 
 
-. /Users/yourname/anaconda3/bin/activate && conda activate /Users/sook/anaconda3; 
+. /Users/yourname/anaconda3/bin/activate && conda activate /Users/yourname/anaconda3; 
 (base) yourname@yourname-MacBook-Air ~ % . /Users/yourname/anaconda3/bin/activate && conda activate /Users/yourname/anaconda3; 
 (base) yourname@yourname-MacBook-Air ~ % 
 
