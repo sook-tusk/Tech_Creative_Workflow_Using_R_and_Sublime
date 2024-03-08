@@ -61,10 +61,11 @@ To set a shortcut to trigger radian,
     3) Instead of pressing Enter, click on the gear icon to lauch keyboard shortcut.
     4) Set as Cmd ⌘ + alt ⌥ + R
 
-# for graphics: 
-not sure if I need it. VSCode shows plots, View also works without xqartz!
+# Extra: for graphics: 
+VSCode shows plots, View also works without xqartz!
 
-You will also need to install XQuartz: https://www.xquartz.org/
+To install XQuartz: https://www.xquartz.org/
+Not sure if I need it. 
 
 # Reference:
 
