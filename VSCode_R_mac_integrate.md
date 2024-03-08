@@ -2,11 +2,11 @@
 # anaconda download
 accept default settings. 
 navigator open. 
-
+```
 . /Users/yourname/anaconda3/bin/activate && conda activate /Users/yourname/anaconda3; 
 (base) yourname@yourname-MacBook-Air ~ % . /Users/yourname/anaconda3/bin/activate && conda activate /Users/yourname/anaconda3; 
 (base) yourname@yourname-MacBook-Air ~ % 
-
+```
 # to install radian, type this in the Terminal.
 pip3 install -U radian
 
@@ -14,6 +14,7 @@ pip3 install -U radian
 R by REditorSupport 
 
 # configure VScode json 
+```{json}
 {
     "editor.fontSize": 15,
     "terminal.integrated.fontSize": 15,
@@ -32,7 +33,7 @@ R by REditorSupport
         "announcement": "auto"
     },
 }
-
+```
 # Troubleshoot issues caused by Path
 Mac applies quarantine in VSCode repeatedly. To avoid it, do this:
 
