@@ -1,7 +1,8 @@
 [
-
-// Rterm open (radian opens Rterm to run R codes)
-// To make two columns, go to View > Layout > Columns:2. Put the cursor in Column2: 
+// > ============== R - ST4 =================
+// >> Open Rterm (radian opens Rterm to run R codes)
+// Put the cursor in column2: Ctrl+K, Ctrl+RightArrow
+// Or, go to View > Layout > Columns:2. Put the cursor in Column2:
     { "keys": ["ctrl+alt+r"],
         "command": "terminus_open",
         "args": {
@@ -12,6 +13,39 @@
         }
     },
 
+// >> R - Assignment operator, <- with "alt(option in Mac)+ -" works both in .R and .Rmd
+    {
+        "keys":["alt+-"],
+        "command": "insert_snippet",
+        "args": {"contents": "<- $0"},
+        "context": [
+           { "key": "selector", "operator": "equal",
+             "operand": "source.r"}
+        ],
+
+    },
+
+// >> R - Pipe operator, %>% with command+shift+m (Mac), ctrl+shift+m (Windows)
+    {
+        "keys": ["ctrl+shift+m"],
+        "command": "insert_snippet",
+        "args": { "contents": "%>% $0"},
+        "context": [
+          { "key": "selector", "operator": "equal",
+            "operand": "source.r" },
+      ],
+    },
+
+// >> To use ctrl+keypad_enter to run R code
+// ST3 works by default. Manually set in ST4.
+    {
+        "keys": ["ctrl+keypad_enter"],
+        "command": "send_code",
+        "context": [
+            { "key": "selector", "operator": "equal",
+              "operand": "source" }
+        ]
+    },
 
 ]
 
