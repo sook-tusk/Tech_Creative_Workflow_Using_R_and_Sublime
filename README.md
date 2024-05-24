@@ -92,7 +92,10 @@ While many programming languages can be run from within Sublime Text, our main p
     -   find location of the current file in the folder tree
     -   launch a particular tutorial file for a quick reference (Ctrl+P)
     -   New View into file - no more back and forth scrolling!
-    -   Jump between sections
+-   Jumping between headings/sections (using *Table of comments* package)
+    -   Simply add > in front of a heading
+    -   Press F1 to trigger the list of headings/sections and jump straight to a chosen heading
+    -   Type _/* TOC */_ then press F1 to automatically print/update TOC (in Rscripts, add # in front of /* TOC */)
 
 Watch the video (Please unmute first. Instructions begin in 15 seconds)
 
