@@ -1,1 +1,68 @@
+[
+// ===== Win/Mac, Code jumping  =====
+// in laptops, f1 may not work. Press fn+F1 instead.
+ { "keys": ["f1"], "command": "table_of_comments" },
+
+// ===== Mac, R - ST4  =====
+
+// To open radian (radian opens Rterminal automatically to run R codes)
+// To make two columns, go to View > Layout > Columns:2. 
+// Put the cursor in Column2.
+// In Mac, "command+alt+r" also works.
+    { "keys": ["command+option+r"],
+        "command": "terminus_open",
+        "args": {
+            "post_window_hooks": [
+                ["carry_file_to_pane", {"direction": "right"}]
+            ],
+            "cmd" : "/Users/yourname/anaconda3/bin/radian"
+        }
+    },
+
+
+// Assignment operator with [ alt + , ] works both in .R and .Rmd
+    {
+        // alt+keypad_minus doesn't work?
+        // "keys":["alt+-", "alt+keypad_minus"],
+        // also "command": "insert",
+        // $0 is to position the cursor after <-
+
+    
+        "keys":["alt+-"],
+        "command": "insert_snippet",
+        "args": {"contents": "<- $0"},
+        "context": [
+           { "key": "selector", "operator": "equal",
+             "operand": "source.r"}
+        ],
+
+    },
+// Pipe operator, ctrl+shift+m, 
+    { 
+        "keys": ["command+shift+m"], 
+        "command": "insert_snippet",
+        "args": { "contents": "%>% $0"},
+        "context": [
+          { "key": "selector", "operator": "equal", 
+            "operand": "source.r" },
+      ],
+    },
+// Pipe operator, ctrl+shift+m, 
+    { 
+        "keys": ["command+option+i"], 
+        "command": "insert_snippet",
+        "args": { "contents": "```{r}``` $0"},
+        "context": [
+          { "key": "selector", "operator": "equal", 
+            "operand": "source.r" },
+      ],
+    },
+
+// ===== Mac, Stata - ST4  =====
+  {
+    "keys": ["ctrl+d"], "command": "lines_to_stata"
+  },
+
+
+]
 
