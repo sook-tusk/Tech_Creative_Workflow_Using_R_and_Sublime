@@ -85,18 +85,19 @@ While many programming languages can be run from within Sublime Text, our main p
 
 ## Demonstration of key features in ST
 
--   Running R code interactively
--   Jumping between projects (using *Project Manager* package, Ctrl+Alt+P)
--   File management (using *SideBarEnhancements* package)
+-   Jumping between projects (using **Project Manager** package, Ctrl+Alt+P)
+-   File management (using **A file Icon** package)
+-   File management (using **SideBarEnhancements** package)
     -   move files between panels
     -   find location of the current file in the folder tree
     -   launch a particular tutorial file for a quick reference (Ctrl+P)
     -   New View into file - no more back and forth scrolling!
--   Jumping between headings/sections (using *Table of comments* package)
+-   Jumping between headings/sections (using **Table of comments** package)
     -   Simply add > in front of a heading
     -   Press F1 to trigger the list of headings/sections and jump straight to a chosen heading
     -   Type _/* TOC */_ then press F1 to automatically print/update TOC (in Rscripts, add # in front of /* TOC */)
-
+-   Running R code interactively
+  
 Watch the video (Please unmute first. Instructions begin in 15 seconds)
 
 https://github.com/sook-tusk/Tech_Creative_Workflow_Using_R_and_Sublime/assets/120035640/6230c2a6-8926-4df7-8d88-53b49354694e
