@@ -8,6 +8,8 @@ Welcome to the workshop! We will discuss challenges in project management and cr
 
 *Target audience*: Anyone who is engaged in coding and/or data management, and keen to explore software or tools available to improve their workflow. At a practical level, students or researchers who need to manage multiple projects and need a system that allows ongoing coding training at your own pace will benefit from this training. The other important purpose is to help facilitate your creative workflow! Soon, you'll see what I mean!
 
+*Update: The R-Visual Studo Code integration is available*. See Part 4 [Part 4](#part4)
+
 # Preliminary Steps
 
 Install R (<https://www.r-project.org/>) and Sublime Text 4 (<https://www.sublimetext.com/download>). In Sublime Text (ST) menu,
