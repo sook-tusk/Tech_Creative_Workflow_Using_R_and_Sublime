@@ -350,14 +350,25 @@ Ensure that you have correctly specified paths in Terminus for Radian. Also, che
 
 **A more sustainable approach** would be to remove R-IDE and LSP packages in `Command Palette` before reinstalling these packages. Sublime will remember your earlier custom settings and take care of the rest. Restart PC and try again. If this doesn't help, consider removing/reinstalling anaconda and radian, or even R. As your PC updates with newer technology (*watch out your PC updates!*), it's a good idea to maintain the optimal (almost) up-to-date computing environment.
 
-# TIPS 1: Paste/export R code with syntax highlights
+# Part 4: Integrating R and Visual Studio Code
+If you have already installed Radian, the remaining steps are rather simple.
+
+## In Windows: 
+to be updated
+
+## In Mac:
+In the repository, see [VSCode_R_mac_integratation](VSCode_R_mac_integrate.md).
+
+
+# R tips
+## TIP 1: Paste/export R code with syntax highlights
 
 Visual Studio Code (VSCode) and Notepad++ offers extremely handy shortcuts for this task. Open an R script file in VSCode and copy and paste onto an email or in Word. It's very handy when you seek help with fixing errors. VS Code is free to download here (<https://code.visualstudio.com/>). In Notepad++ (Windows PC), highlight the portion of code then go to menu, *Plugins \> NppExport \> Copy HTML to clipboard* (I use `Ctrl+Shift+H` as a shortcut). Then, paste onto an email or in Word. The code highlights are nicely retained!
 
-# TIPS 2: Consider Sublime_Tutorial folder
+## TIP 2: Consider Sublime_Tutorial folder
 If there are many new concepts to grasp, you may consider keeping the information in a dedicated tutorial folder. It'll be handy when you upgrade your computing system or migrate to a newer PC. If you are fixing any errors, I recommend logging the details; you will need to remember what worked, and not worked, and why! 
 
-# TIPS 3: Decide location and filename first
+## TIP 3: Decide location and filename first
 
 ### before creating the contents
 
