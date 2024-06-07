@@ -356,7 +356,7 @@ Ensure that you have correctly specified paths in Terminus for Radian. Also, che
 If you have already installed Radian, the remaining steps are rather simple. Packages in Sublime is called Extensions in VS Code. To trigger command palette, press F1 or Command+Shift+P. Type any command you'd like and test. The principle is similar to the one in Sublime.
 
 ## In Windows: 
-In the repository, see [VSCode_R_Windows_integration](VSCode_R_Windows_integrate.md).
+In the repository, see [VSCode_R_Windows_integration](VScode_R_Windows_integrate.md). 
 
 ## In Mac:
 In the repository, see [VSCode_R_mac_integration](VSCode_R_mac_integrate.md).
