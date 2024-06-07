@@ -223,7 +223,7 @@ In your PC, launch anaconda navigator. Then, go to:
 
 ![](image/anaconda.png)
 
-and execute the following command:
+and execute the following command: (it should be pip3, not pip)
 
 > pip3 install -U radian
 
@@ -233,7 +233,7 @@ and execute the following command:
 In Mac: 
 Access key bindings file by pressing **Command+Shit+P > type Preferences: Key Bindings > Enter**.
 Copy the entire code below to your custom (user) key bidnings file.
-Ensure to replace `yourname` as appropriate. You can also refer to the example keymap file in Windows/Mac in the repository.
+Ensure to replace `yourname` as appropriate. You can also refer to the example keymap file in Windows/Mac in the repository (See Sublime_Tutorial folder).
 ```py
 [
 // To open radian (radian opens Rterminal automatically to run R codes)
