@@ -352,7 +352,7 @@ Ensure that you have correctly specified paths in Terminus for Radian. Also, che
 
 **A more sustainable approach** would be to remove R-IDE and LSP packages in `Command Palette` before reinstalling these packages. Sublime will remember your earlier custom settings and take care of the rest. Restart PC and try again. If this doesn't help, consider removing/reinstalling anaconda and radian, or even R. As your PC updates with newer technology (*watch out your PC updates!*), it's a good idea to maintain the optimal (almost) up-to-date computing environment.
 
-# Part 4: Integrating R and Visual Studio Code
+# Part 4: Integrating R and Visual Studio Code <a href="#part4" id="part4"/>
 If you have already installed Radian, the remaining steps are rather simple. Packages in Sublime is called Extensions in VS Code. To trigger command palette, press F1 or Command+Shift+P. Type any command you'd like and test. The principle is similar to the one in Sublime.
 
 ## In Windows: 
