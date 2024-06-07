@@ -117,8 +117,7 @@ If there are multiple shortcut set as Ctrl+Enter,
 temporarily assign Alt+Enter and change it back to Ctrl+Enter.
 These shortcuts overwrite existing ones. Accept it's okay.
 
-4. VSCode Keybidnings customised
-R Create Terminal
-Set as ctrl+alt+r (same as Sublime)
+4. VSCode Keybidnings customised:
+R Create Terminal is set as ctrl+alt+r (same as Sublime)
 
 5. Done.
