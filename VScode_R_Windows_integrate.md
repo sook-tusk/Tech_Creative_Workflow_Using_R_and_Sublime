@@ -122,22 +122,4 @@ These shortcuts overwrite existing ones. Accept it's okay.
 R Create Terminal
 Set as ctrl+alt+r (same as Sublime)
 
-  // R code won't run. Conflict shortcuts. Can't do it in VSCode
-  // !editorReadonly is added to fix it.
-  {
-    "key": "ctrl+enter",
-    "command": "-r.runSelection",
-    "when": "editorTextFocus && !editorReadonly && editorLangId == 'r'"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "-r.runSelection",
-    "when": "editorTextFocus && !editorReadonly && editorLangId == 'rmd'"
-  },
-  // Same as Sublime's shortcut. Radian R terminal
-  {
-    "key": "ctrl+alt+r",
-    "command": "r.createRTerm"
-  },
-
 5. Done.
