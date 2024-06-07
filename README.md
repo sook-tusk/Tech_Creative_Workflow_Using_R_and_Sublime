@@ -233,7 +233,9 @@ and execute the following command: (it should be pip3, not pip)
 In Mac: 
 Access key bindings file by pressing **Command+Shit+P > type Preferences: Key Bindings > Enter**.
 Copy the entire code below to your custom (user) key bidnings file.
-Ensure to replace `yourname` as appropriate. You can also refer to the example keymap file in Windows/Mac in the repository (See Sublime_Tutorial folder).
+Ensure to replace `yourname` as appropriate. 
+You can also refer to the example keymap file in Windows/Mac in the repository (In the repository, see [Example-Sublime-Keymap](Sublime_Tutorial/Example-Mac.Sublime-Keymap) located under *Sublime_Tutorial* folder.
+ (See Sublime_Tutorial folder).
 ```py
 [
 // To open radian (radian opens Rterminal automatically to run R codes)
