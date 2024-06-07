@@ -344,7 +344,7 @@ mv: cannot move '/usr/local/lib/R/site-library/rlang' to '/usr/local/lib/R/site-
 This is due to conflicts caused by existing library files by earlier R version. All R packages you will install will be stored under library folder. If you have multiple R versions, the library settings need updating. For instance, you installed R 3.6 earlier and attempt to install a newer version, R 4.3, while keeping the older version. In such case, ensure to create a new folder indicating the newer version before proceeding with languageserver installation. The possible paths may be either `C:/Users/yourname/Documents/R/win-library` or `C:/Users/yourname/AppData/Local/R/win-library/`. In the correct path, check your R version folder (e.g. 4.3) exists. If not, create one, then install languageserver. Ensure that installation is successful.
 
 ### Rterm would not launch
-Ensure that you have correctly specified paths in Terminus for Radian. Check the settings for the above packages.
+Ensure that you have correctly specified paths in Terminus for Radian. Also, check the settings for other packages.
 
 **A quick fix** would be to launch Terminus using an alternative Terminal such as Command Prompt (`In Command Palette, choose Terminus: List Shells > Command Prompt > Open in Tab`) Then, go to an R script and type R. By pressing `Ctrl+Enter`, you can launch Rterm yourself to run R code. The syntax in Rterm is not highlighted, though.
 
