@@ -119,15 +119,24 @@ Press `Ctrl+Shift+P`. This triggers an *empty* drop-down window. This window is 
 ![](image/Installpackages.png)
 
 ## Step 2: Configure ST
+Once relevant packages are installed, we need to change settings for *each* package to communicate with R, to be able to send R code from within Sublime. We'll use Sublime menu to access settings. In Sublime Text menu (Windows PC), go to `Preferences > Package Settings > `. Mac users can access the package settings by clicking `Sublime Text > Settings > Package Settings` on the top left corner of your screen. 
+
+You'll see the full list of packages you have installed. Select the package you'd like to configure. The panel on the left is default. The right panel concerns the user customisation file. Copy below or edit as necessary. 
 
 ### R-IDE
 
-We ensure Sublime Text recognises your R version and path. In Sublime Text menu, go to `Preferences > Package Settings > R-IDE > Settings` in Windows. The panel on the right concerns the user customisation file. Copy below or edit as necessary. Mac users can access the package settings by clicking `Sublime Text > Settings > Package Settings` on the top left corner of your screen.
+We ensure Sublime Text recognises your R version and path. In the list of packages, select `Package Settings > R-IDE > Settings`. In the user customisation file, copy below or edit as necessary. Comments are indicated by `//`.
 
+In Windows:
 ```py
 {
-// Windows
     "r_binary": "C:\\Program Files\\R\\R-4.3.1\\bin\\x64\\R.exe",
+}
+```
+
+In Mac:
+```py
+{
 // Mac, Linux
     "r_binary": "/usr/local/bin/R",	
 }
@@ -152,10 +161,11 @@ In the blank user customisation area, paste the following.
 }
 ```
 
+
 ### Terminus
 
 Customise as necessary. *Terminus is a variant name referring to Terminal such as Command Prompt, PowerShell, and Bash*.
-
+In Windows:
 ```py
 {
 // Windows
@@ -177,7 +187,7 @@ Customise as necessary. *Terminus is a variant name referring to Terminal such a
   ],
 } 
 ```
-In Mac:
+In Mac: please replace `yourname` as appropriate.
 ```py
 {
     "default_config": {
@@ -197,7 +207,33 @@ In Mac:
 ```
 If unsure about the radian path, type "whereis radian" in Terminal. In Linux, the path can be "/home/yourname/anaconda3/bin/radian".
 
-Shortcut for radian (R terminal) in Mac (Command+Shit+P > Preferences: Key Bindings): 
+## Step 3: Install Radian
+
+This setup allows you to run R code in ST, but the console will print all in one colour. We need yet another python-powered programme called *radian* to get console output's highlights. *Radian* will automatically open `Rterm` (meaning R terminal). *Radian* is not available in ST, and you need to install manually outside of ST, via **anaconda**, the central python ecosystem manager.
+
+### 3.1 Download and install anaconda.
+
+Download here (<https://www.anaconda.com/download/>) and install it. 
+
+### 3.2 Install radian
+
+In your PC, launch anaconda navigator. Then, go to:
+
+`Environments > base(root) > greentriangle > Open Terminal`
+
+![](image/anaconda.png)
+
+and execute the following command:
+
+> pip3 install -U radian
+
+![](image/radian2.png)
+
+## Step 4: Complete the settings by defining Custom Shortcuts (key bidnings)
+In Mac: 
+Access key bindings file by pressing **Command+Shit+P > type Preferences: Key Bindings > Enter**.
+Copy the entire code below to your custom (user) key bidnings file.
+Ensure to replace `yourname` as appropriate. You can also refer to the example keymap file in Windows/Mac in the repository.
 ```py
 [
 // To open radian (radian opens Rterminal automatically to run R codes)
@@ -239,32 +275,8 @@ Shortcut for radian (R terminal) in Mac (Command+Shit+P > Preferences: Key Bindi
 
 ```
 
-Shortcut for radian (R terminal) in Windows: See the example keymap file in the repository.
-
-## Step 3: Install Radian
-
-This setup allows you to run R code in ST, but the console will print all in one colour. We need yet another python-powered programme called *radian* to get console output's highlights. *Radian* will automatically open `Rterm` (meaning R terminal). *Radian* is not available in ST, and you need to install manually outside of ST, via **anaconda**, the central python ecosystem manager.
-
-### 3.1 Download and install anaconda.
-
-Download here (<https://www.anaconda.com/download/>) and install it. 
-
-### 3.2 Install radian
-
-In your PC, launch anaconda navigator. Then, go to:
-
-`Environments > base(root) > greentriangle > Open Terminal`
-
-![](image/anaconda.png)
-
-and execute the following command:
-
-> pip3 install -U radian
-
-![](image/radian2.png)
-
-## Step 4: Nearly done. Add paths as appropriate (Windows only)
-Paths is one of the Windows PC system properties. Windows PCs look for an .exe in the paths set in the environment variable window. To bring up the environment variable window, type `env` at the search bar placed at the bottom left of the task bar.
+## Step 5: Add paths as appropriate (Windows only)
+This step is not necessary for Mac users. Windows PC need an extra step. Paths is one of the Windows PC system properties. Windows PCs look for an .exe in the paths set in the environment variable window. To bring up the environment variable window, type `env` at the search bar placed at the bottom left of the task bar.
 
 ![](image/env.png)
 
@@ -276,9 +288,15 @@ Please note that .exe is not added at the end of the path. For R, it will be:
 Restart PC after environment setting has changed.For the detailed instructions, see here [add-Windows-paths]
 (https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/). For Mac PCs, follow similar procedures as necessary.
 
-## Step 5: All done. Test running R code in ST
+## Step 6: All done. Test running R code in ST
 
 In Sublime, we create a side by side view by going to the menu, *View > Layout > Columns: 2* and display R code on the left and Terminal panel on the right. Leave the cursor on the right panel where Terminal will launch.
+There are two ways to open a Terminal to send the R code to. 
+
+- Using shortcuts: Press `command+option+r` in Mac (ctrl+alt+r in Windows) to open an RTerm (R terminal).
+  Then, go to your R Script file and press `Ctrl+Enter` to run a line of code or blocks. The output will be printed in RTerm.
+  
+- Using Sublime menu: (watch the video for this procedure)
 Press `Ctrl+Shit+P`, type **SendCode: Choose Program**, then choose **Terminus**. This needs to be done only once.
 
 Now, we are set to instruct Sublime to launch *Rterm*. Press Ctrl+Shit+P and type :
