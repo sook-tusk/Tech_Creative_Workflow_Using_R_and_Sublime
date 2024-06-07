@@ -54,7 +54,7 @@ R Create Terminal
 : Set as ctrl+alt+r (consistent with Sublime)
 
 In VSCode, press `F1 > type Preferences: Open Keyboard Shortcuts (JSON)` to open the shortcut keys json file. Copy the following and paste at the end of the file inside the square brackets, `[]`.
-```
+```json
 [
   // ========= R =======
   {
