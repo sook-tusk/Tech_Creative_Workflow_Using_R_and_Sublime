@@ -19,7 +19,7 @@ Restart PC after env is changed.
 ## in RStudio (skip if already done)
 install.packages("languageserver")
 
-## Install VSCode extension for for python
+## Install VSCode extensions 
 R
 
 Python (Microsoft)
