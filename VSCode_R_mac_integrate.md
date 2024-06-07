@@ -75,6 +75,8 @@ https://towardsdatascience.com/setting-up-python-julia-and-r-in-visual-studio-co
 
 https://stackoverflow.com/questions/30065227/run-open-vscode-from-mac-terminal
 
+Some of the info is dated. Some may still be useful.
+https://francojc.github.io/posts/r-in-vscode/
 
 
 
