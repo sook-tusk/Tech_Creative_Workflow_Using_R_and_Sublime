@@ -3,9 +3,7 @@
 
 ## Install anaconda, Radian (skip if already done)
 To install Radian,
-Method 1:
-(download and install Anaconda3)
-https://www.anaconda.com/
+download and install Anaconda3, https://www.anaconda.com/
 
 in anaconda navigator>environments>base(root)>upsidetriangle>Open Terminal)
 and execute the following command:
@@ -23,11 +21,13 @@ install.packages("languageserver")
 
 ## Install VSCode extension for for python
 R
+
 Python (Microsoft)
+
 Python Extension pack(Don Jayamanne).
 
 ## Configure VSCode json
-In VSCode, press F1 > type Preferences: Open User Settings (JSON) to open the json file.
+In VSCode, press `F1 > type Preferences: Open User Settings (JSON)` to open the json file.
 
 ```json
 {
@@ -53,7 +53,7 @@ In VSCode, press F1 > type Preferences: Open User Settings (JSON) to open the js
 R Create Terminal
 : Set as ctrl+alt+r (consistent with Sublime)
 
-In VSCode, press F1 > type Preferences: Open Keyboard Shortcuts (JSON) to open the shortcut keys json file. Copy the following and paste at the end of the file inside the square brackets, `[]`.
+In VSCode, press `F1 > type Preferences: Open Keyboard Shortcuts (JSON)` to open the shortcut keys json file. Copy the following and paste at the end of the file inside the square brackets, `[]`.
 ```
 [
   // ========= R =======
@@ -85,8 +85,7 @@ C:\Users\yourname\AppData\Roaming\Code\User
 ### 18/2/2024 FIX TO RUN R CODE  ===============
 0. Installed Rtools43 (R>4.3) compatible with R version. 
 needed in Windows PC??
-Added in env as well. 
-Then, checked .libPaths() then installed languageserver.
+Checked .libPaths() then installed languageserver again.
 install.packages("languageserver")
 
 1.  .Rprofile is empty in other desktop PC but works...
@@ -99,7 +98,7 @@ Removed it and  R-4.3.1\\bin\\R.exe seems to work ok.
 // Linux requires alwaysUseActiveTerminal. No need in Windows.
     //"r.alwaysUseActiveTerminal": true,
 
-3. to run R code: 
+3. to run R code: (DATED, IGNORE, for future ref only)
 
 - Open the R scipt.
 VSCode command palette, select 
