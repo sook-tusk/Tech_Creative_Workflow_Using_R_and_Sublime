@@ -82,7 +82,7 @@ C:\Users\yourname\AppData\Roaming\Code\User
 
 ## TROUBLESHOOT
 
-### 18/2/2024 FIX TO RUN R CODE  ===============
+### Feb 2024 FIXED TO RUN R CODE  ===============
 0. Installed Rtools43 (R>4.3) compatible with R version. 
 needed in Windows PC??
 Checked .libPaths() then installed languageserver again.
