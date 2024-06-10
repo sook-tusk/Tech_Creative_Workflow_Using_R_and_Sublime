@@ -34,6 +34,16 @@ R by REditorSupport
     },
 }
 ```
+# configure VScode keybindings.son 
+Add the following:
+```json
+  {
+    "key": "cmd+alt+r",
+    "command": "r.createRTerm"
+  },
+```
+To run R code, press `cmd+alt+r` to open a Terminal, then send the R code by pressing `cmd+enter`.
+
 # Troubleshoot issues caused by Path
 Mac applies quarantine in VSCode repeatedly. To avoid it, do this:
 
@@ -45,7 +55,8 @@ In VSCode,
 3) Type in 'shell' and select the 
  Shell command: Install ‘code’ command in PATH 
 
-# VSCode error: There are no open terminals.
+# Troubleshoot: How to set shortcuts (avoid VSCode error: There are no open terminals).
+For future ref only. No need.
 Option 1: 
     1) Press Cmd ⌘ + Shift ⇧ + P to open the Command Palette.
     2) Type in 'R' and select the 
