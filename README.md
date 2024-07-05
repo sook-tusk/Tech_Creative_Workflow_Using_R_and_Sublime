@@ -363,9 +363,19 @@ In the repository, see [VSCode_R_mac_integration](VSCode_R_mac_integrate.md).
 
 
 # R tips
-## TIP 1: Paste/export R code with syntax highlights
+## TIP 1: Paste/export R code with syntax highlighting
 
-Visual Studio Code (VSCode) and Notepad++ offers extremely handy shortcuts for this task. Open an R script file in VSCode and copy and paste onto an email or in Word. It's very handy when you seek help with fixing errors. VS Code is free to download here (<https://code.visualstudio.com/>). In Notepad++ (Windows PC), highlight the portion of code then go to menu, *Plugins \> NppExport \> Copy HTML to clipboard* (I use `Ctrl+Shift+H` as a shortcut). Then, paste onto an email or in Word. The code highlights are nicely retained!
+- Visual Studio Code (VSCode) and Notepad++ offers extremely handy shortcuts for this task. Open an R script file in VSCode and copy and paste onto an email or in Word. It's very handy when you seek help with fixing errors. VS Code is free to download here (<https://code.visualstudio.com/>). In Notepad++ (Windows PC), highlight the portion of code then go to menu, *Plugins \> NppExport \> Copy HTML to clipboard* (I use `Ctrl+Shift+H` as a shortcut). Then, paste onto an email or in Word. The code highlights are nicely retained!
+- Sublime Text 4 also supports this functionality. Access `Copy as HTML` command under Edit menu. You can also set a shortcut. I usually set a consistent key across editors. 
+  ```json
+  //> ============ Windows, Code copying ===============
+  { "keys": ["ctrl+shift+h"], "command": "copy_as_html",
+    "args": { "enclosing_tags": true } },
+
+    //> ============ Mac, Code copying ===============
+  { "keys": ["command+shift+h"], "command": "copy_as_html",
+    "args": { "enclosing_tags": true } },
+  ```
 
 ## TIP 2: Consider Sublime_Tutorial folder
 If there are many new concepts to grasp, you may consider keeping the information in a dedicated tutorial folder. It'll be handy when you upgrade your computing system or migrate to a newer PC. If you are fixing any errors, I recommend logging the details; you will need to remember what worked, and not worked, and why! 
