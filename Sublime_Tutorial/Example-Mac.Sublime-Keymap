@@ -1,4 +1,9 @@
 [
+
+//> ============ Mac, Code copying ===============
+ { "keys": ["command+shift+h"], "command": "copy_as_html",
+  "args": { "enclosing_tags": true } },
+
 // ===== Win/Mac, Code jumping  =====
 // in laptops, f1 may not work. Press fn+F1 instead.
  { "keys": ["f1"], "command": "table_of_comments" },
