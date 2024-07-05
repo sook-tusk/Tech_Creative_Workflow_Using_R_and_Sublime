@@ -3,6 +3,10 @@
  { "keys": ["ctrl+shift+h"], "command": "copy_as_html",
    "args": { "enclosing_tags": true } },
 
+//> ===== Win/Mac, Code jumping  =====
+// in laptops, f1 may not work. Press fn+F1 instead.
+ { "keys": ["f1"], "command": "table_of_comments" },
+
 // > ============== Windows, R - ST4 =================
 // >> Open Rterm (radian opens Rterm to run R codes)
 // Put the cursor in column2: Ctrl+K, Ctrl+RightArrow
