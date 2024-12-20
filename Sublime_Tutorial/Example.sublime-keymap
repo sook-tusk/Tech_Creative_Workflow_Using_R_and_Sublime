@@ -7,6 +7,12 @@
 // in laptops, f1 may not work. Press fn+F1 instead.
  { "keys": ["f1"], "command": "table_of_comments" },
 
+// > ============== Windows, DATE ST4 =================
+// > DATE: Install the InsertDate package and customised
+  { "keys": ["alt+f5"], "command": "insert_date",
+    "args": {"format": "%x"}
+    },
+
 // > ============== Windows, R - ST4 =================
 // >> Open Rterm (radian opens Rterm to run R codes)
 // Put the cursor in column2: Ctrl+K, Ctrl+RightArrow
