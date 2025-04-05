@@ -98,6 +98,7 @@ While many programming languages can be run from within Sublime Text, our main p
     -   Simply add > in front of a heading
     -   Press F1 to trigger the list of headings/sections and jump straight to a chosen heading
     -   Type _/* TOC */_ then press F1 to automatically print/update TOC (in Rscripts, add # in front of /* TOC */)
+-   View graphics (image files) from within ST by mouse hovering (using **ImagePreview** package)
 -   Running R code interactively
   
 Watch the video (Please unmute first. Instructions begin in 15 seconds)
@@ -106,7 +107,7 @@ https://github.com/sook-tusk/Tech_Creative_Workflow_Using_R_and_Sublime/assets/1
 
 # Part 3: Integrating R and Sublime Text <a href="#part3" id="part3"/>
 
-## Step 1: Install packages in Sublime Text (ST)
+## Step 1: Install packages in Sublime Text (ST4)
 
 Press `Ctrl+Shift+P`. This triggers an *empty* drop-down window. This window is called Command Palette. The cursor is waiting for a command in the Command Palette. Start typing "Install Package" then press Enter. In a few seconds, when the Command Palette window appears again, type "r-ide", and press Enter. Notice the updating message at the bottom left of the ST window, to see the confirmation of the installation status (such as "*R-IDE package was installed successfully*"). Repeat this process to install other packages.The packages we need are :
 
