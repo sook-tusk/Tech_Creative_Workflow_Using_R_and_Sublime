@@ -1,4 +1,11 @@
 [
+//> ========= jump between headings, in md ===========
+// { "keys": ["ctrl+r"], "command": "show_overlay", 
+//     "args": {"overlay": "goto", "text": "@"} },
+
+{ "keys": ["f4"], "command": "show_overlay",
+    "args": {"overlay": "goto", "text": "@"} },
+
 //> ============ Windows, Code copying ===============
  { "keys": ["ctrl+shift+h"], "command": "copy_as_html",
    "args": { "enclosing_tags": true } },
