@@ -1,20 +1,26 @@
 
 # anaconda download
-accept default settings. 
-navigator open. 
+Follow the instructions here: <https://www.anaconda.com/download/success?reg=skipped>
+
+Accept default settings and complete the installation process. We then activiate the conda environment.
+
+In the Mac zsh terminal, type `. /Users/yourname/anaconda3/bin/activate && conda activate /Users/yourname/anaconda3; `.
+
+For example:
 ```
-. /Users/yourname/anaconda3/bin/activate && conda activate /Users/yourname/anaconda3; 
 (base) yourname@Mac ~ % . /Users/yourname/anaconda3/bin/activate && conda activate /Users/yourname/anaconda3; 
 (base) yourname@Mac ~ % 
 ```
 # to install radian, type this in the Terminal.
 uv tool install radian
 
+See details here: <https://github.com/randy3k/radian>
+
 # in VSCode, install Extensions 
 R by REditorSupport 
 
 # configure VScode json 
-```{json}
+```json
 {
     "editor.fontSize": 15,
     "terminal.integrated.fontSize": 15,
@@ -30,13 +36,13 @@ R by REditorSupport
   //    "--no-save",
   //    "--no-restore",
   //    "--r-binary=/usr/local/bin/R",
-    ],
+  //  ],
     "accessibility.signals.terminalQuickFix": {
         "announcement": "auto"
     },
 }
 ```
-# configure VScode keybindings.json
+# Configure VScode keybindings.json
 Open the Command Palette with Cmd+Shift+P, then select Preferences: Open Keyboard Shortcuts (JSON).
 
 In the existing keybindings.json file, add this entry:
@@ -47,8 +53,8 @@ In the existing keybindings.json file, add this entry:
   },
   
 ```
-If the r.createRTerm command would not work, install an extension, `Run in Terminal` by by Kortina and set the shortcut as below.
-```
+If the r.createRTerm command does not work, install an extension, `Run in Terminal` by Kortina and set the shortcut as below.
+```json
     {
     "key": "cmd+alt+r",
     "command": "runInTerminal.run",
@@ -59,7 +65,9 @@ If the r.createRTerm command would not work, install an extension, `Run in Termi
     }
 ```
 
-To run R code, press `cmd+alt+r` to open a Terminal, then send the R code by pressing `cmd+enter`.
+To run R code, press `cmd+alt+r` to open a Terminal, then send the R code by pressing `cmd+enter`. 
+
+Hopefully, these settings work. Some troubleshooting guide is provided in case of any issues.
 
 # Troubleshoot issues caused by Path
 Mac applies quarantine in VSCode repeatedly. To avoid it, do this:
@@ -72,25 +80,9 @@ In VSCode,
 3) Type in 'shell' and select the 
  Shell command: Install ‘code’ command in PATH 
 
-# Troubleshoot: How to set shortcuts (avoid VSCode error: There are no open terminals).
-For future ref only. No need.
-Option 1: 
-    1) Press Cmd ⌘ + Shift ⇧ + P to open the Command Palette.
-    2) Type in 'R' and select the 
-    R: Create R terminal
-    3) Press Enter.
-
-Option 2: set a shortcut
-
-To set a shortcut to trigger radian,
-    1) Press Cmd ⌘ + Shift ⇧ + P to open the Command Palette.
-    2) Type in 'R' and select the 
-        R: Create R terminal
-    3) Instead of pressing Enter, click on the gear icon to lauch keyboard shortcut.
-    4) Set as Cmd ⌘ + alt ⌥ + R
 
 # Creating a task to launch an Radian terminal 
-If both methods do not trigger an Radian terminal, one can take advantage of the task feature in VSCode.
+If none of methods triggers an Radian terminal, one can take advantage of the task feature in VSCode.
 
 ## Create a task to launch Radian automatically
 tasks.json file is located in :
@@ -136,6 +128,23 @@ You should suppress some of the duplicate shortcuts and experiment with them you
 VSCode shows plots, View also works without xqartz!
 
 To install XQuartz: https://www.xquartz.org/
+
+# Troubleshoot: OLD How to set shortcuts (avoid VSCode error: There are no open terminals).
+For future ref only. No need.
+Option 1: 
+    1) Press Cmd ⌘ + Shift ⇧ + P to open the Command Palette.
+    2) Type in 'R' and select the 
+    R: Create R terminal
+    3) Press Enter.
+
+Option 2: set a shortcut
+
+To set a shortcut to trigger radian,
+    1) Press Cmd ⌘ + Shift ⇧ + P to open the Command Palette.
+    2) Type in 'R' and select the 
+        R: Create R terminal
+    3) Instead of pressing Enter, click on the gear icon to lauch keyboard shortcut.
+    4) Set as Cmd ⌘ + alt ⌥ + R
 
 # Reference:
 
