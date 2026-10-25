@@ -33,9 +33,9 @@ In VSCode, press `F1 > type Preferences: Open User Settings (JSON)` to open the 
 {
 
     "r.bracketedPaste": true,
-    // "r.rterm.windows": "C:\\ProgramData\\anaconda3\\Scripts\\radian.exe",
-    "r.rterm.windows": "C:\\Users\\yourname\\anaconda3\\Scripts\\radian.exe",
-    "r.rpath.windows": "C:\\Program Files\\R\\R-4.3.1\\bin\\R.exe",
+    // "r.consolePath": "C:\\ProgramData\\anaconda3\\Scripts\\radian.exe",
+    "r.consolePath": "C:\\Users\\yourname\\anaconda3\\Scripts\\radian.exe",
+    "r.executablePath": "C:\\Program Files\\R\\R-4.3.1\\bin\\R.exe",
     "r.lsp.debug": true,
     "r.lsp.diagnostics": true,
     "r.rterm.option": [
@@ -77,7 +77,7 @@ In VSCode, press `F1 > type Preferences: Open Keyboard Shortcuts (JSON)` to open
 ```
 
 ## Tips
-### VSCode Keybidnings location
+### VSCode Keybindings location
 C:\Users\yourname\AppData\Roaming\Code\User
 
 ## TROUBLESHOOT

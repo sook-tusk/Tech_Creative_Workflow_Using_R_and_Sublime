@@ -4,11 +4,11 @@ accept default settings.
 navigator open. 
 ```
 . /Users/yourname/anaconda3/bin/activate && conda activate /Users/yourname/anaconda3; 
-(base) yourname@yourname-MacBook-Air ~ % . /Users/yourname/anaconda3/bin/activate && conda activate /Users/yourname/anaconda3; 
-(base) yourname@yourname-MacBook-Air ~ % 
+(base) yourname@Mac ~ % . /Users/yourname/anaconda3/bin/activate && conda activate /Users/yourname/anaconda3; 
+(base) yourname@Mac ~ % 
 ```
 # to install radian, type this in the Terminal.
-pip3 install -U radian
+uv tool install radian
 
 # in VSCode, install Extensions 
 R by REditorSupport 
@@ -22,26 +22,43 @@ R by REditorSupport
     "workbench.iconTheme": "vscode-great-icons", 
     "r.bracketedPaste": true, 
     "r.alwaysUseActiveTerminal": true,
-    "r.rterm.mac": "/Users/yourname/anaconda3/bin/radian",
-    "r.rpath.mac": "/usr/local/bin/R",
-    "r.rterm.option": [
-        "--no-save",
-        "--no-restore",
-        "--r-binary=/usr/local/bin/R",
+  // updated for VSCode version 1.143.1, Oct. 2026.
+    "r.consolePath": "/Users/yourname/anaconda3/bin/radian",
+    "r.executablePath": "/usr/local/bin/R",
+  // These could cause an error.  
+  // "r.rterm.option": [
+  //    "--no-save",
+  //    "--no-restore",
+  //    "--r-binary=/usr/local/bin/R",
     ],
     "accessibility.signals.terminalQuickFix": {
         "announcement": "auto"
     },
 }
 ```
-# configure VScode keybindings.son 
-Add the following:
+# configure VScode keybindings.json
+Open the Command Palette with Cmd+Shift+P, then select Preferences: Open Keyboard Shortcuts (JSON).
+
+In the existing keybindings.json file, add this entry:
 ```json
   {
     "key": "cmd+alt+r",
     "command": "r.createRTerm"
   },
+  
 ```
+If the r.createRTerm command would not work, install an extension, `Run in Terminal` by by Kortina and set the shortcut as below.
+```
+    {
+    "key": "cmd+alt+r",
+    "command": "runInTerminal.run",
+    "args": {
+        "cmd": "radian",
+        "match": ".*"
+     }
+    }
+```
+
 To run R code, press `cmd+alt+r` to open a Terminal, then send the R code by pressing `cmd+enter`.
 
 # Troubleshoot issues caused by Path
@@ -72,11 +89,53 @@ To set a shortcut to trigger radian,
     3) Instead of pressing Enter, click on the gear icon to lauch keyboard shortcut.
     4) Set as Cmd ⌘ + alt ⌥ + R
 
+# Creating a task to launch an Radian terminal 
+If both methods do not trigger an Radian terminal, one can take advantage of the task feature in VSCode.
+
+## Create a task to launch Radian automatically
+tasks.json file is located in :
+
+`"/Users/yourname/Library/Application Support/Code/User/tasks.json"`
+
+Copy and paste the following into the tasks.json:
+```json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open Radian",
+      "type": "shell",
+      "command": "radian",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": false
+      },
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    }
+  ]
+}
+```
+
+## Link the task to a shortcut, Cmd+Alt+R 
+In the existing keybindings.json file, add this entry:
+```json
+{
+  "key": "cmd+alt+r",
+  "command": "workbench.action.tasks.runTask",
+  "args": "Open Radian"
+}
+```
+You should suppress some of the duplicate shortcuts and experiment with them youself to understand which shortcut is actually working!
+
 # Extra: for graphics: 
 VSCode shows plots, View also works without xqartz!
 
 To install XQuartz: https://www.xquartz.org/
-Not sure if I need it. 
 
 # Reference:
 
