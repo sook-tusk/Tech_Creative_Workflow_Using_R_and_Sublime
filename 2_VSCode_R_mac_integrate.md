@@ -65,7 +65,7 @@ If the r.createRTerm command does not work, install an extension, `Run in Termin
     }
 ```
 
-To run R code, press `cmd+alt+r` to open a Terminal, then send the R code by pressing `cmd+enter`. 
+Now, test running some lines of R code. First, press `cmd+alt+r` to open a Terminal. Then, press `cmd+enter` to send the R code to the Terminal.
 
 Hopefully, these settings work. Some troubleshooting guide is provided in case of any issues.
 
