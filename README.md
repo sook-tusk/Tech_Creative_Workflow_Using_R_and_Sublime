@@ -101,9 +101,6 @@ While many programming languages can be run from within Sublime Text, our main p
 -   View graphics (image files) from within ST by mouse hovering (using **ImagePreview** package)
 -   Running R code interactively
   
-Watch the video (Please unmute first. Instructions begin in 15 seconds)
-
-https://github.com/sook-tusk/Tech_Creative_Workflow_Using_R_and_Sublime/assets/120035640/6230c2a6-8926-4df7-8d88-53b49354694e
 
 # Part 3: Integrating R and Sublime Text <a href="#part3" id="part3"/>
 
