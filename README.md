@@ -85,7 +85,7 @@ While many programming languages can be run from within Sublime Text, our main p
 
 -   Open the provided files there. An *.md* file is essentially a *.txt* file but it comes with many frills. Try with \# and \## to make a to-do list (Converting is not necessary as our goal is making notes!).
 
-## Key features in ST
+## Demonstration of key features in ST
 
 -   Jumping between projects (using **Project Manager** package, Ctrl+Alt+P)
 -   File management (using **A file Icon** package)
@@ -101,6 +101,9 @@ While many programming languages can be run from within Sublime Text, our main p
 -   View graphics (image files) from within ST by mouse hovering (using **ImagePreview** package)
 -   Running R code interactively
   
+Watch the video (Please unmute first. Instructions begin in 15 seconds)
+
+https://github.com/sook-tusk/Tech_Creative_Workflow_Using_R_and_Sublime/assets/120035640/6230c2a6-8926-4df7-8d88-53b49354694e
 
 # Part 3: Integrating R and Sublime Text <a href="#part3" id="part3"/>
 
@@ -130,7 +133,7 @@ We ensure Sublime Text recognises your R version and path. In the list of packag
 In Windows:
 ```py
 {
-    "r_binary": "C:\\Program Files\\R\\R-4.3.1\\bin\\x64\\R.exe",
+    "r_binary": "C:\\Program Files\\R\\R-4.5.2\\bin\\x64\\R.exe",
 }
 ```
 
@@ -156,11 +159,10 @@ In the blank user customisation area, paste the following.
     "r":
     {
         "prog": "terminus",
-        "bracketed_paste_mode": false,
+        "bracketed_paste_mode": true,
     },
 }
 ```
-
 
 ### Terminus
 
@@ -224,11 +226,9 @@ In your PC, launch anaconda navigator. Then, go to:
 
 ![](image/anaconda.png)
 
-and execute the following command: (it should be pip3, not pip)
+and execute the following command: 
 
 > pip3 install -U radian
-
-![](image/radian2.png)
 
 ## Step 4: Complete the settings by defining Custom Shortcuts (key bidnings)
 In Mac: 
@@ -397,4 +397,4 @@ Please consult other excellent resources on Sublime Text for further information
 
 Please note that the **Terminus** package in Sublime should not be confused with **Terminal** package. An implementation of Rmarkdown in Sublime can also be considered. You may also consider the integration of Visual Studio Code and R, as the similar integration principle will apply. This is beyond of the scope of the current workshop. Are you a Stata user? You may also benefit from here (<https://github.com/sook-tusk/Tech_Integrate_Stata_R_with_Editors>). 
 
-I hope Sublime Text helps manage your project, and improve your workflow for years to come. While being mindful of caveats, I really hope you utilise this amazing tool, Sublime, wisely. Thank you, and please get in touch with your success stories!
+I hope Sublime Text helps manage your project, and improve your workflow for years to come. While being mindful of caveats, I really hope you utilise this amazing tool, Sublime, wisely. 
